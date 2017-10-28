@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="1.1">
-    <name>Google+ Badge - Gantry Particle</name>
+    <name>Google+ Badge - Gantry Particle (Hydrogen)</name>
     <version>1.0</version>
     <creationDate>28.10.2017</creationDate>
     <author>Marian Tanase, Andreas Kar</author>
@@ -16,7 +16,7 @@
 		<p><b>NOTA</b>:&nbsp;La particella viene installata nel template G5 Hydrogen.<br />Se si desidera installare su un template Gantry 5 diverso, bisogna copiare manualmente i due file <code>gplus-badge.yaml</code> e <code>gplus-badge.html.twig</code> in <code>/templates/[NOME-TEMPLATE]/custom/particles</code></p></div>]]>
     </description>
     <fileset>
-        <files folder="particles" target="templates/g5_hydrogen/custom/particles">
+        <files folder="particles" target="templates/g5_hydrogen/particles">
 			<filename>gplus-badge.html.twig</filename>
 			<filename>gplus-badge.yaml</filename>
 		</files>
