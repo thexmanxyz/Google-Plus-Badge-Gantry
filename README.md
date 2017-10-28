@@ -48,5 +48,5 @@ None
 ## Credits
 Thanks to Google for the Google Plus Platform API and the Gantry 5 Framework team for providing a modern templating framework.
 
-## by [marian](https://github.com/mariantanase), [thex](https://github.com/thexmanxyz)
+## by [mariantanase](https://github.com/mariantanase), [thex](https://github.com/thexmanxyz)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
