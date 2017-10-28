@@ -1,0 +1,77 @@
+{########################################################}
+{#                                                      #}
+{#   Google+ Badge - Particle for Gantry 5              #}
+{#                                                      #}
+{#   Purpose: This project adds the Google              #}
+{#            Plus Profile, Page or Community           #}
+{#            Badge to the Gantry templating            #}
+{#            framework.                                #}
+{#                                                      #}
+{#   Author:  Marian Tanase <marian@tanase.it>          #}
+{#            Andreas Kar (thex) <andreas.kar@gmx.at>   #}
+{#                                                      #}
+{########################################################}
+
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set gId = particle.gid|default('+LarryPage') %}
+{% set gProfileType = particle.gprofiletype|default('person') %}
+{% set gLayout = particle.glayout|default('portrait') %}
+{% set gTagline = particle.gshowtagline|default(true) %}
+{% set gCover = particle.gshowcoverphoto|default(true) %}
+{% set gTheme = particle.gtheme|default('light') %}
+{% set gWidth = particle.gwidth|default(300) %}
+{% set gJsPlace = particle.gjsplace|default('head') %}
+{% set gJsPrior = particle.gjspriority|default(0) %}
+{% set gType = 'text/javascript' %}
+{% set gJsExec = '' %}
+
+{% if gProfileType == 'community' %}
+    {% set gId = 'communities/' ~ gId %}
+    {% set gPhotoTag = 'data-showphoto' %}
+    {% set gShowOwner = ' data-showowners="' ~ _self.intToBool(particle.gshowowner|default(false)) ~ '"' %}
+{% else %}
+    {% set gPhotoTag = 'data-showcoverphoto' %}
+    {% set gShowOwner = '' %}
+{% endif %}
+
+{% if particle.glocaljs and particle.glocaljspath is not empty %}
+    {% set gJsPath = particle.glocaljspath %}
+{% else %}
+    {% set gJsPath = 'https://apis.google.com/js/platform.js' %}
+{% endif %}
+
+{% if particle.gjsexec == 'defer' or particle.gjsexec == 'both' %}
+    {% set gJsExec = 'defer="defer"' %}
+{% endif %}
+
+{% if particle.gjsexec == 'both' %}
+    {% set gJsExec = gJsExec ~ ' ' %}
+{% endif %}
+
+{% if particle.gjsexec == 'async' or particle.gjsexec == 'both' %}
+    {% set gJsExec = gJsExec ~ 'async="async"' %}
+{% endif %}
+
+{% if gJsExec is not empty %}
+    {% set gJsExec = ' ' ~ gJsExec %}
+{% endif %}
+
+{%- block particle -%}
+<div class="g-google-plus-badge{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}">
+    <div class="g-grid">
+        <div class="g-block">
+            <div class="g-google-plus-badge-inner">
+                <div class="g-{{gProfileType}}" data-href="https://plus.google.com/{{gId|raw}}" data-width="{{gWidth}}" data-layout="{{gLayout}}" data-showtagline="{{_self.intToBool(gTagline)}}"{{gShowOwner|raw}} {{gPhotoTag}}="{{_self.intToBool(gCover)}}" data-theme="{{gTheme}}" data-rel="author"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{%- scripts in gJsPlace with { priority: gJsPrior } -%}
+    <script >
+        window.___gcfg = {lang: '{{particle.glanguage|default('en-US')}}', parsetags: '{{particle.gparsetag|default('onload')}}'};
+    </script>
+    <script type="{{gType}}" src="{{url(gJsPath)}}"{{gJsExec}}></script>
+{%- endscripts -%}
+{%- endblock -%}
+{% macro intToBool(bVal) %}{{bVal ? 'true' : 'false'}}{% endmacro %}

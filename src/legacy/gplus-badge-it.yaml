@@ -1,0 +1,230 @@
+#######################################################
+#                                                     #
+#   Google+ Badge - Particle for Gantry 5             #
+#                                                     #
+#   Purpose: This project adds the Google             #
+#            Plus Profile, Page or Community          #
+#            Badge to the Gantry templating           #
+#            framework.                               #
+#                                                     #
+#   Author: Marian Tanase <marian@tanase.it>          #
+#           Andreas Kar (thex) <andreas.kar@gmx.at>   #
+#                                                     #
+#######################################################
+
+name: Google+ Badge
+description: Mostra Google+ Badge.
+type: particle
+icon: fa-google-plus-square
+
+#configuration:
+#  caching:
+#    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Abilita globalmente la particella.
+      default: true
+
+    set_appearance:
+      type: container.set
+      label: Appearance
+      fields:
+        css.class:
+          type: input.selectize
+          label: CSS Classe
+          description: Classe CSS personalizzata.
+          default: 
+
+        gid:
+          type: input.text
+          label: Google+ ID
+          description: ID del Google+ - https://plus.google.com/.../[ID].
+          placeholder: Inserisci il tuo Google+ ID
+          default: +LarryPage
+
+        gprofiletype:
+          type: select.select
+          label: Site Type
+          description: Select the type of the site you want to use in the badge.
+          default: person
+          options:
+            person: Profile
+            page: Page
+            community: Community
+
+        gtheme:
+          type: select.select
+          label: Tema a colori
+          description: Selezionare il tema desiderata.
+          default: light
+          options:
+            light: Chiaro
+            dark: Scuro
+
+        glayout:
+          type: select.select
+          label: Orientamento badge
+          description: Orientamento del badge.
+          default: portrait
+          options:
+            portrait: Ritratto
+            landscape: Paesaggio
+
+        glanguage:
+          type: select.select
+          label: Language
+          description: Select the language for the badge.
+          default: en-US
+          options:
+            af: Afrikaans
+            am: Amharic
+            ar: Arabic
+            eu: Basque
+            bn: Bengali
+            bg: Bulgarian
+            ca: Catalan
+            zh-HK: Chinese (Hong Kong)
+            zh-CN: Chinese (Simplified)
+            zh-TW: Chinese (Traditional)
+            hr: Croatian
+            cs: Czech
+            da: Danish
+            nl: Dutch
+            en-GB: English (UK)
+            en-US: English (US)
+            et: Estonian
+            fil: Filipino
+            fi: Finnish
+            fr: French
+            fr-CA: French (Canadian)
+            gl: Galician
+            de: German
+            el: Greek
+            gu: Gujarati
+            iw: Hebrew
+            hi: Hindi
+            hu: Hungarian
+            is: Icelandic
+            id: Indonesian
+            it: Italian
+            ja: Japanese
+            kn: Kannada
+            ko: Korean
+            lv: Latvian
+            lt: Lithuanian
+            ms: Malay
+            ml: Malayalam
+            mr: Marathi
+            no: Norwegian
+            fa: Persian
+            pl: Polish
+            pt-BR: Portuguese (Brazil)
+            pt-PT: Portuguese (Portugal)
+            ro: Romanian
+            ru: Russian
+            sr: Serbian
+            sk: Slovak
+            sl: Slovenian
+            es: Spanish
+            es-419: Spanish (Latin America)
+            sw: Swahili
+            sv: Swedish
+            ta: Tamil
+            te: Telugu
+            th: Thai
+            tr: Turkish
+            uk: Ukrainian
+            ur: Urdu
+            vi: Vietnamese
+            zu: Zulu
+
+        gwidth:
+          type: input.text
+          label: Larghezza
+          description: Inserisci la larghezza del badge in pixel (solo numero, senza 'px').
+          placeholder: 300
+          default: 300
+
+        gshowcoverphoto:
+          type: input.radios
+          label: Foto di copertina
+          description: Abilita la visualizzazione della foto di copertina.
+          default: true
+          options:
+            true: Attivato
+            false: Disattivato
+
+        gshowtagline:
+          type: input.radios
+          label: Descrizione
+          description: Abilita la visualizzazione della descrizione.
+          default: true
+          options:
+            true: Attivato
+            false: Disattivato
+
+        gshowowner:
+          type: input.radios
+          label: Show Owner
+          description: Configure this option to show or hide the owner(s) of a community.
+          default: false
+          options:
+            true: Show
+            false: Hide
+    set_js:
+      type: container.set
+      label: JS
+      fields:
+        gparsetag:
+          type: input.radios
+          label: Loading Mechanism
+          description: Configure this option set the loading mechanism of the badge.
+          default: onload
+          options:
+            onload: Onload
+            explicit: Explicit
+
+        gjsplace:
+          type: input.radios
+          label: JS Placement
+          description: Placement of the JS script.
+          default: head
+          options:
+            head: Header
+            footer: Footer
+
+        gjspriority:
+          type: input.text
+          label: JS Priority
+          description: The priority of the JS script.
+          placeholder: -10 ... 10
+          default: 0
+
+        glocaljs:
+            type: input.checkbox
+            label: Enable local JS
+            description: Enable or disable the use of local JS file, instead of CDN.
+            default: 0
+
+        glocaljspath:
+            type: input.text
+            label: Local JS Path
+            description: Path to the Google+ JS file on this server (relative to root).
+            placeholder: path/to/js
+            default:
+
+        gjsexec:
+            type: select.select
+            label: JS Execution
+            description: The used execution method for the loaded JS.
+            placeholder: 'Select...'
+            default: both
+            options:
+                none: None
+                async: Asynchronous
+                defer: Deferred
+                both: Both
