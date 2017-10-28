@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="1.1">
+    <name>Google+ Badge - Gantry Particle</name>
+    <version>1.0</version>
+    <creationDate>28.10.2017</creationDate>
+    <author>Marian Tanase, Andreas Kar</author>
+    <authorEmail>marian@tanase.it, andreas.kar@gmx.at</authorEmail>
+    <authorUrl>http://www.tanase.it</authorUrl>
+    <copyright>© 2017 Documentazione e Guide Gantry in italiano per creare Template Joomla! professionali</copyright>
+    <license>MIT - see LICENSE.pdf</license>
+    <description>
+        <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<h3>Google+ Badge - Particella per Gantry 5 Framework</h3>
+		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Marian Tanase (marian@tanase.it)</em>,&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
+		<h4 style="border-top:1px dotted #9ACFEB;padding-top:0.2rem;padding-bottom:1rem;"><a href="http://www.tanase.it" class="alert-link" target="_blank">Documentazione e Guide Gantry in italiano per creare Template Joomla! professionali.</a></h4>
+		<p><b>NOTA</b>:&nbsp;La particella viene installata nel template G5 Helium.<br />Se si desidera installare su un template Gantry 5 diverso, bisogna copiare manualmente i due file <code>gplus-badge.yaml</code> e <code>gplus-badge.html.twig</code> in <code>/templates/[NOME-TEMPLATE]/custom/particles</code></p></div>]]>
+    </description>
+    <fileset>
+        <files folder="particles" target="templates/g5_helium/custom/particles">
+			<filename>gplus-badge.html.twig</filename>
+			<filename>gplus-badge.yaml</filename>
+		</files>
+    </fileset>
+</extension>
