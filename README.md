@@ -9,8 +9,30 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 * Gantry 5 Templating Framework and Theme
 * Google Plus Platform API
 
-## Download / Installation
-1. [Download v1.2](https://github.com/thexmanxyz/Cookie-Consent-Neo-Gantry/releases/download/v1.2/ccn.atom.only.v1.2.zip) of the Google Plus Badge Particle Package
+## Download
+Choose the correct download for your target platform. Joomla Plugin supported for Gantry 5 themes (Helium / Hydrogen):
+
+**Default Particle:**
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb.particle.only.v1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb.particle.only.IT.v1.0.zip)
+
+**Legacy Particle (Gantry <5.3.2):**
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb.particle.only.legacy.v1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb.particle.only.legacy.IT.v1.0.zip)
+
+**Joomla Plugin (Hydrogen):**
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb-j3-hydrogen-v1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb-j3-hydrogen-IT-v1.0.zip)
+
+**Joomla Plugin (Helium):**
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb-j3-helium-v1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb-j3-helium-IT-v1.0.zip)
+
+## Automatic Installation (Joomla only)
+1. Download the Hydrogen or Helium version of the plugin
+2. Install over the Joomla Plugin System
+3. Go to your Gantry templating backend (e.g. Extensions/Templates)
+4. Switch to **Layout** and add the new appearing Particle called **Google+ Badge** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
+5. Configure the appearance according to your favor
+
+## Manual Installation
+1. Download the correct version of the Google Plus Badge Particle Package
 2. Extract the files
 3. Copy the **html.twig** and the **yaml** file to your particle folder 
    * the target folder for Joomla would be **/templates/{gantry_theme}/particles**
