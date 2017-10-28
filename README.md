@@ -25,7 +25,7 @@ Choose the correct download for your target platform. Joomla Plugin supported fo
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb-j3-helium-v1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.0/gpb-j3-helium-IT-v1.0.zip)
 
 ## Automatic Installation (Joomla only)
-1. Download the Plugin version (Hydrogen or Helium) of the Google Plus Badge Particle
+1. Download the Plugin for Hydrogen or Helium of the Google Plus Badge Particle
 2. Install over the Joomla Plugin System
 3. Go to your Gantry templating backend (e.g. Extensions/Templates)
 4. Switch to **Layout** and add the new appearing Particle called **Google+ Badge** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
