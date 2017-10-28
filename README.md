@@ -21,7 +21,24 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 6. Configure the appearance according to your favor
 
 ## Supported API Parameters and Particle Options
-* 
+* Custom CSS Class
+* Site types
+  * Profile, Page and Community
+* Theme
+* Orientation
+  * Landscape and Portrait
+* Badge Language (~60)
+* Sizing of badge
+* Photo for badge
+* Badge description
+* Community owner
+* Loading Mechanism
+* JS priority and placement (head / footer)
+* Server local JS loading
+* Disable CDN
+* JS Execution
+  * Asynchronous
+  * Deferred
 
 ## Showroom
 Insight of Google Plus Badge - Gantry Particle configuration:
