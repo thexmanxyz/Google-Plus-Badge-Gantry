@@ -43,7 +43,7 @@ Choose the correct download for your target platform. Joomla Plugin System suppo
 6. Configure the appearance according to your favor
 
 ## Supported API Parameters and Particle Options
-* Custom CSS Class
+* Custom CSS Classes
 * Site types
   * Profile, Page and Community
 * Theme
