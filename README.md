@@ -25,7 +25,7 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 * Site types
   * Profile, Page and Community
 * Theme
-  * light and dark
+  * Light and Dark
 * Orientation
   * Landscape and Portrait
 * Badge Language (~60)
