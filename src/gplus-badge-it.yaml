@@ -33,7 +33,7 @@ form:
       type: container.tabs
       fields:
         tab_appearance:
-            label: Appearance
+            label: Aspetto
             fields:
                 css.class:
                   type: input.selectize
@@ -50,13 +50,13 @@ form:
 
                 gprofiletype:
                   type: select.select
-                  label: Site Type
-                  description: Select the type of the site you want to use in the badge.
+                  label: Tipo Sito
+                  description: Selezionare il tipo di sito che si desidera utilizzare nel badge.
                   default: person
                   options:
-                    person: Profile
-                    page: Page
-                    community: Community
+                    person: Profilo
+                    page: Pagina
+                    community: Comunità
 
                 gtheme:
                   type: select.select
@@ -78,8 +78,8 @@ form:
 
                 glanguage:
                   type: select.select
-                  label: Language
-                  description: Select the language for the badge.
+                  label: Lingia
+                  description: Selezionare la lingua del badge.
                   default: en-US
                   options:
                     af: Afrikaans
@@ -171,19 +171,19 @@ form:
 
                 gshowowner:
                   type: input.radios
-                  label: Show Owner
-                  description: Configure this option to show or hide the owner(s) of a community.
+                  label: Mostra Proprietario
+                  description: Configurare questa opzione per mostrare o nascondere i(l) proprietari(o) di una comunità.
                   default: false
                   options:
-                    true: Show
-                    false: Hide
+                    true: Mostra
+                    false: Nascondi
         tab_js:
             label: JS
             fields:
                 gparsetag:
                   type: input.radios
-                  label: Loading Mechanism
-                  description: Configure this option set the loading mechanism of the badge.
+                  label: Metodo di caricamento
+                  description: Configurare questa opzione per impostare il metodo di caricamento del badge.
                   default: onload
                   options:
                     onload: Onload
@@ -191,8 +191,8 @@ form:
 
                 gjsplace:
                   type: input.radios
-                  label: JS Placement
-                  description: Placement of the JS script.
+                  label: Posizione JS
+                  description: Posizionamento dello script JS.
                   default: head
                   options:
                     head: Header
@@ -200,32 +200,32 @@ form:
 
                 gjspriority:
                   type: input.text
-                  label: JS Priority
-                  description: The priority of the JS script.
+                  label: Priorità JS
+                  description: Priorità dello script JS.
                   placeholder: -10 ... 10
                   default: 0
 
                 glocaljs:
                     type: input.checkbox
-                    label: Enable local JS
-                    description: Enable or disable the use of local JS file, instead of CDN.
+                    label: Attivazione JS locale
+                    description: Abilitare o disabilitare l uso del file JS locale, invece di CDN.
                     default: 0
 
                 glocaljspath:
                     type: input.text
-                    label: Local JS Path
-                    description: Path to the Google+ JS file on this server (relative to root).
-                    placeholder: path/to/js
+                    label: Percorso JS locale
+                    description: Percorso al file JS Google+ su questo server (relativo alla root).
+                    placeholder: percorso/al/js
                     default:
 
                 gjsexec:
                     type: select.select
-                    label: JS Execution
-                    description: The used execution method for the loaded JS.
-                    placeholder: 'Select...'
+                    label: JS Esecuzione
+                    description: Il metodo di esecuzione usato per il JS caricato.
+                    placeholder: 'Seleziona...'
                     default: both
                     options:
-                        none: None
-                        async: Asynchronous
-                        defer: Deferred
-                        both: Both
+                        none: Nessuna
+                        async: Asincrono
+                        defer: Differita
+                        both: Entrambe
