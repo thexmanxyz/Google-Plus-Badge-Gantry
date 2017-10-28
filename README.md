@@ -54,15 +54,15 @@ Insight of Google Plus Badge - Gantry Particle configuration:
 
 Example of different supported Google+ Badges:
 
-**Frontend (Profile)** - *[JS](/screenshots/frontend_profile.png)*
+**Frontend (1)** - *[Profile](/screenshots/frontend_profile.png)*
 
 ![3](/screenshots/frontend_profile.png)
 
-**Frontend (Profile)** - *[JS](/screenshots/frontend_page.png)*
+**Frontend (2)** - *[Page](/screenshots/frontend_page.png)*
 
 ![4](/screenshots/frontend_page.png)
 
-**Frontend (Community)** - *[JS](/screenshots/frontend_community.png)*
+**Frontend (3)** - *[Community](/screenshots/frontend_community.png)*
 
 ![5](/screenshots/frontend_community.png)
 
