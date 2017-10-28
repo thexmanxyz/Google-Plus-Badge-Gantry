@@ -37,7 +37,7 @@ Choose the correct download for your target platform. Joomla Plugin supported fo
 3. Copy the **html.twig** and the **yaml** file to your particle folder 
    * the target folder for Joomla would be **/templates/{gantry_theme}/particles**
    * the folder(s) for Wordpress and Grav may vary
-   * If you are using Gantry **<5.3.2** please use the **legacy yaml** instead
+   * If you are using Gantry **<5.3.2** please use the **Legacy Version** instead
 4. Go to your Gantry templating backend (e.g. Extensions/Templates)
 5. Switch to **Layout** and add the new appearing Particle called **Google+ Badge** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
 6. Configure the appearance according to your favor
