@@ -1,3 +1,17 @@
+REM #######################################################
+REM #                                                     #
+REM #   Google+ Badge - Particle for Gantry 5             #
+REM #                                                     #
+REM #   Purpose: This project adds the Google             #
+REM #            Plus Profile, Page or Community          #
+REM #            Badge to the Gantry templating           #
+REM #            framework.                               #
+REM #                                                     #
+REM #   Author: Marian Tanase <marian@tanase.it>          #
+REM #           Andreas Kar (thex) <andreas.kar@gmx.at>   #
+REM #                                                     #
+REM #######################################################
+
 @echo off
 
 REM --- Script Variables ---
@@ -5,11 +19,11 @@ set remove_folders=0
 set log_files=0
 
 REM --- Packaging Variables ---
-set langs_upper=EN, IT
+set langs_upper=EN, IT, DE
 set default_lang=EN
 
 set prj_id=gpb
-set prj_rev=v1.0
+set prj_rev=v1.1.0
 set prj_name=gplus-badge
 set prj_fullname=Google Plus Badge - Particle
 

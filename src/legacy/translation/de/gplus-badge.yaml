@@ -13,7 +13,7 @@
 #######################################################
 
 name: Google+ Badge
-description: Displays a Google+ Badge.
+description: Rendert ein Google+ Badge.
 type: particle
 icon: fa-google-plus-square
 
@@ -26,63 +26,63 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: More information for the particle configuration <a href="https://developers.google.com/+/web/badge/" target="_blank">here</a>
+      content: Mehr Informationen zur Particle Konfiguration finden Sie <a href="https://developers.google.com/+/web/badge/" target="_blank">hier</a>
       
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Globally enable the particle.
+      label: Aktiviert
+      description: Globale Aktivierung des Particles
       default: true
 
     set_appearance:
       type: container.set
-      label: Appearance
+      label: Aussehen
       fields:
         css.class:
           type: input.selectize
-          label: CSS Classes
-          description: Set a specific CSS class for custom styling.
+          label: CSS Klassen
+          description: Setzen Sie eine Klasse für die individuelle Gestaltung.
           default: 
 
         gid:
           type: input.text
           label: Google+ ID
-          description: The Google+ ID - https://plus.google.com/.../[ID]. 
-          placeholder: Enter a Google+ ID
+          description: Die Google+ ID - https://plus.google.com/.../[ID].
+          placeholder: Geben Sie die Google+ ID ein
           default: +LarryPage
 
         gprofiletype:
           type: select.select
-          label: Site Type
-          description: Select the type of the site you want to use in the badge.
+          label: Darstellungstyp
+          description: Wählen Sie die Darstellung in der das Badge gerendert werden soll.
           default: person
           options:
-            person: Profile
-            page: Page
+            person: Profil
+            page: Seite
             community: Community
 
         gtheme:
           type: select.select
-          label: Theme Color
-          description: Select the color theme you want to use.
+          label: Themenfarbe
+          description: Wählen Sie die Themenfarbe die Sie verwenden möchten.
           default: light
           options:
-            light: Light
-            dark: Dark
+            light: Hell
+            dark: Dunkel
 
         glayout:
           type: select.select
-          label: Badge Orientation
-          description: The orientation of the badge.
+          label: Badge Ausrichtung
+          description: Die Ausrichtung des Badge.
           default: portrait
           options:
-            portrait: Portrait
-            landscape: Landscape
+            portrait: Porträt
+            landscape: Landschaft
 
         glanguage:
           type: select.select
-          label: Language
-          description: Select the language for the badge.
+          label: Sprache
+          description: Wählen Sie die Sprache für das Badge.
           default: en-US
           options:
             af: Afrikaans
@@ -149,37 +149,37 @@ form:
 
         gwidth:
           type: input.text
-          label: Width
-          description: Enter the width of the badge in pixels (only the number, no 'px').
+          label: Breite
+          description: Geben Sie die Breit für das Badge in Pixel ein (nur Zahlen, keine Einheit wie zB 'px').
           placeholder: 300
           default: 300
 
         gshowcoverphoto:
           type: input.radios
-          label: Cover Photo
-          description: Configure this option to show or hide the cover photo.
+          label: Titelbild
+          description: Konfigurieren Sie diese Option um das Titelbild zu zeigen oder zu verstecken.
           default: true
           options:
-            true: Show
-            false: Hide
+            true: Zeigen
+            false: Verstecken
 
         gshowtagline:
           type: input.radios
-          label: Description
-          description: Configure this option to show or hide the description.
+          label: Beschreibung
+          description: Konfigurieren Sie diese Option um die Beschreibung zu zeigen oder zu verstecken.
           default: true
           options:
-            true: Show
+            true: Zeigen
             false: Hide
 
         gshowowner:
           type: input.radios
-          label: Show Owner
-          description: Configure this option to show or hide the owner(s) of a community.
+          label: Besitzer anzeigen
+          description: Konfigurieren Sie diese Option um die Community Besitzer zu zeigen oder zu verstecken.
           default: false
           options:
-            true: Show
-            false: Hide
+            true: Zeigen
+            false: Verstecken
 
     set_js:
       type: container.set
@@ -187,8 +187,8 @@ form:
       fields:
         gparsetag:
           type: input.radios
-          label: Loading Mechanism
-          description: Configure this option set the loading mechanism of the badge.
+          label: Lade Mechanismus
+          description: Konfigurieren Sie diese Option um den Lade Mechanismus des Badge zu verändern.
           default: onload
           options:
             onload: Onload
@@ -196,8 +196,8 @@ form:
 
         gjsplace:
           type: input.radios
-          label: JS Placement
-          description: Placement of the JS.
+          label: JS Platzierung
+          description: Platzierung des JS.
           default: head
           options:
             head: Header
@@ -205,32 +205,32 @@ form:
 
         gjspriority:
           type: input.text
-          label: JS Priority
-          description: The priority of the JS.
+          label: JS Priorität
+          description: Die Priorität des JS.
           placeholder: -10 ... 10
           default: 0
 
         glocaljs:
             type: input.checkbox
-            label: Enable local JS
-            description: Enable or disable the use of local JS file, instead of CDN.
+            label: Lokales JS aktivieren
+            description: Aktivieren oder deaktivieren Sie die lokale JS Datei, statt CDN.
             default: 0
 
         glocaljspath:
             type: input.text
-            label: Local JS Path
-            description: Path to the Google Platform JS file on this server (relative to root).
-            placeholder: path/to/JS
+            label: Lokaler JS Pfad
+            description: Pfad zur Google Platform JS Datei auf diesem Server (relativ zum Root).
+            placeholder: Pfad/zum/JS
             default:
 
         gjsexec:
             type: select.select
-            label: JS Execution
-            description: The used execution method for the loaded JS.
-            placeholder: 'Select...'
+            label: JS Ausführung
+            description: Die verwendete Ausführungsmethode für das Laden der JS Datei.
+            placeholder: 'Auswahl...'
             default: both
             options:
-                none: None
-                async: Asynchronous
-                defer: Deferred
-                both: Both
+                none: Keine
+                async: Asynchron
+                defer: Verzögert
+                both: Beide

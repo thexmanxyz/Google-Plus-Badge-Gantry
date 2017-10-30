@@ -13,7 +13,7 @@
 #######################################################
 
 name: Google+ Badge
-description: Mostra Google+ Badge.
+description: Rendert ein Google+ Badge.
 type: particle
 icon: fa-google-plus-square
 
@@ -26,65 +26,65 @@ form:
     _info:
       type: separator.note
       class: alert alert-info
-      content: Maggiori informazioni per la configurazione delle particle <a href="https://developers.google.com/+/web/badge/" target="_blank">qui</a>
+      content:  Mehr Informationen zur Particle Konfiguration finden Sie <a href="https://developers.google.com/+/web/badge/" target="_blank">hier</a>
       
     enabled:
       type: input.checkbox
-      label: Enabled
-      description: Abilita globalmente la particella.
+      label: Aktiviert
+      description: Globale Aktivierung des Particles
       default: true
 
     tabs:
       type: container.tabs
       fields:
         tab_appearance:
-            label: Aspetto
+            label: Aussehen
             fields:
                 css.class:
                   type: input.selectize
-                  label: CSS Classe
-                  description: Classe CSS personalizzata.
+                  label: CSS Klassen
+                  description: Setzen Sie eine Klasse für die individuelles Gestaltung.
                   default: 
 
                 gid:
                   type: input.text
                   label: Google+ ID
-                  description: ID del Google+ - https://plus.google.com/.../[ID].
-                  placeholder: Inserisci il tuo Google+ ID
+                  description: Die Google+ ID - https://plus.google.com/.../[ID].
+                  placeholder: Geben Sie die Google+ ID ein
                   default: +LarryPage
 
                 gprofiletype:
                   type: select.select
-                  label: Tipo Sito
-                  description: Selezionare il tipo di sito che si desidera utilizzare nel badge.
+                  label: Darstellungstyp
+                  description: Wählen Sie die Darstellung in der das Badge gerendert werden soll.
                   default: person
                   options:
-                    person: Profilo
-                    page: Pagina
-                    community: Comunità
+                    person: Profil
+                    page: Seite
+                    community: Community
 
                 gtheme:
                   type: select.select
-                  label: Tema a colori
-                  description: Selezionare il tema desiderata.
+                  label: Themenfarbe
+                  description: Wählen Sie die Themenfarbe die Sie verwenden möchten.
                   default: light
                   options:
-                    light: Chiaro
-                    dark: Scuro
+                    light: Hell
+                    dark: Dunkel
 
                 glayout:
                   type: select.select
-                  label: Orientamento badge
-                  description: Orientamento del badge.
+                  label:  Badge Ausrichtung
+                  description: Die Ausrichtung des Badge.
                   default: portrait
                   options:
-                    portrait: Ritratto
-                    landscape: Paesaggio
+                    portrait: Porträt
+                    landscape: Landschaft
 
                 glanguage:
                   type: select.select
-                  label: Lingia
-                  description: Selezionare la lingua del badge.
+                  label: Sprache
+                  description: Wählen Sie die Sprache für das Badge.
                   default: en-US
                   options:
                     af: Afrikaans
@@ -151,44 +151,45 @@ form:
 
                 gwidth:
                   type: input.text
-                  label: Larghezza
-                  description: Inserisci la larghezza del badge in pixel (solo numero, senza 'px').
+                  label: Breite
+                  description: Geben Sie die Breit für das Badge in Pixel ein (nur Zahlen, keine Einheit wie zB 'px').
                   placeholder: 300
                   default: 300
 
                 gshowcoverphoto:
                   type: input.radios
-                  label: Foto di copertina
-                  description: Abilita la visualizzazione della foto di copertina.
+                  label: Titelbild
+                  description: Konfigurieren Sie diese Option um das Titelbild zu zeigen oder zu verstecken.
                   default: true
                   options:
-                    true: Attivato
-                    false: Disattivato
+                    true: Zeigen
+                    false: Verstecken
 
                 gshowtagline:
                   type: input.radios
-                  label: Descrizione
-                  description: Abilita la visualizzazione della descrizione.
+                  label: Beschreibung
+                  description: Konfigurieren Sie diese Option um die Beschreibung zu zeigen oder zu verstecken.
                   default: true
                   options:
-                    true: Attivato
-                    false: Disattivato
+                    true: Zeigen
+                    false: Verstecken
 
                 gshowowner:
                   type: input.radios
-                  label: Mostra Proprietario
-                  description: Configurare questa opzione per mostrare o nascondere i(l) proprietari(o) di una comunità.
+                  label: Besitzer anzeigen
+                  description: Konfigurieren Sie diese Option um die Community Besitzer zu zeigen oder zu verstecken.
                   default: false
                   options:
-                    true: Mostra
-                    false: Nascondi
+                    true: Zeigen
+                    false: Verstecken
+
         tab_js:
             label: JS
             fields:
                 gparsetag:
                   type: input.radios
-                  label: Metodo di caricamento
-                  description: Configurare questa opzione per impostare il metodo di caricamento del badge.
+                  label: Lade Mechanismus
+                  description: Konfigurieren Sie diese Option um den Lade Mechanismus des Badge zu verändern.
                   default: onload
                   options:
                     onload: Onload
@@ -196,8 +197,8 @@ form:
 
                 gjsplace:
                   type: input.radios
-                  label: Posizione JS
-                  description: Posizionamento dello JS.
+                  label: JS Platzierung
+                  description: Platzierung des JS.
                   default: head
                   options:
                     head: Header
@@ -205,32 +206,32 @@ form:
 
                 gjspriority:
                   type: input.text
-                  label: Priorità JS
-                  description: Priorità dello JS.
+                  label: JS Priorität
+                  description: Die Priorität des JS.
                   placeholder: -10 ... 10
                   default: 0
 
                 glocaljs:
                     type: input.checkbox
-                    label: Attivazione JS locale
-                    description: Abilitare o disabilitare l uso del file JS locale, invece di CDN.
+                    label: Lokales JS aktivieren
+                    description: Aktivieren oder deaktivieren Sie die lokale JS Datei, statt CDN.
                     default: 0
 
                 glocaljspath:
                     type: input.text
-                    label: Percorso JS locale
-                    description: Percorso al file JS Google Platform su questo server (relativo alla root).
-                    placeholder: percorso/al/JS
+                    label: Lokaler JS Pfad
+                    description: Pfad zur Google Platform JS Datei auf diesem Server (relativ zum Root).
+                    placeholder: Pfad/zum/JS
                     default:
 
                 gjsexec:
                     type: select.select
-                    label: JS Esecuzione
-                    description: Il metodo di esecuzione usato per il JS caricato.
-                    placeholder: 'Seleziona...'
+                    label: JS Ausführung
+                    description: Die verwendete Ausführungsmethode für das Laden der JS Datei.
+                    placeholder: 'Auswahl...'
                     default: both
                     options:
-                        none: Nessuna
-                        async: Asincrono
-                        defer: Differita
-                        both: Entrambe
+                        none: Keine
+                        async: Asynchron
+                        defer: Verzögert
+                        both: Beide

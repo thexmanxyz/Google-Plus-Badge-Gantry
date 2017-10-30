@@ -23,6 +23,11 @@ icon: fa-google-plus-square
 
 form:
   fields:
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: More information for the particle configuration <a href="https://developers.google.com/+/web/badge/" target="_blank">here</a>
+      
     enabled:
       type: input.checkbox
       label: Enabled
@@ -193,7 +198,7 @@ form:
                 gjsplace:
                   type: input.radios
                   label: JS Placement
-                  description: Placement of the JS script.
+                  description: Placement of the JS.
                   default: head
                   options:
                     head: Header
@@ -202,7 +207,7 @@ form:
                 gjspriority:
                   type: input.text
                   label: JS Priority
-                  description: The priority of the JS script.
+                  description: The priority of the JS.
                   placeholder: -10 ... 10
                   default: 0
 
@@ -215,8 +220,8 @@ form:
                 glocaljspath:
                     type: input.text
                     label: Local JS Path
-                    description: Path to the Cookie Consent JS file on this server (relative to root).
-                    placeholder: path/to/js
+                    description: Path to the Google Platform JS file on this server (relative to root).
+                    placeholder: path/to/JS
                     default:
 
                 gjsexec:

@@ -23,6 +23,11 @@ icon: fa-google-plus-square
 
 form:
   fields:
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: Maggiori informazioni per la configurazione delle particle <a href="https://developers.google.com/+/web/badge/" target="_blank">qui</a>
+      
     enabled:
       type: input.checkbox
       label: Enabled
@@ -191,7 +196,7 @@ form:
         gjsplace:
           type: input.radios
           label: Posizione JS
-          description: Posizionamento dello script JS.
+          description: Posizionamento dello JS.
           default: head
           options:
             head: Header
@@ -200,7 +205,7 @@ form:
         gjspriority:
           type: input.text
           label: Priorità JS
-          description: Priorità dello script JS.
+          description: Priorità dello JS.
           placeholder: -10 ... 10
           default: 0
 
@@ -213,8 +218,8 @@ form:
         glocaljspath:
             type: input.text
             label: Percorso JS locale
-            description: Percorso al file JS Google+ su questo server (relativo alla root).
-            placeholder: percorso/al/js
+            description: Percorso al file JS Google Platform su questo server (relativo alla root).
+            placeholder: percorso/al/JS
             default:
 
         gjsexec:
