@@ -10,19 +10,19 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 * Google Plus Platform API
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry 5 themes - Helium and Hydrogen. The latest particle version is **v1.1.0**.
+Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry 5 themes - Helium and Hydrogen. The latest particle version is **v1.1.1**.
 
 **Default Particle:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.particle.only.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.particle.only.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.particle.only.DE.v1.1.0.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.EN.v1.1.1.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.IT.v1.1.1.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.DE.v1.1.1.zip)
 
 **Legacy Particle - Gantry <5.3.2:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.particle.only.legacy.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.particle.only.legacy.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.particle.only.legacy.DE.v1.1.0.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.legacy.EN.v1.1.1.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.legacy.IT.v1.1.1.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.legacy.DE.v1.1.1.zip)
 
 **Joomla Plugin - Hydrogen:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.j3.hydrogen.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.j3.hydrogen.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.j3.hydrogen.DE.v1.1.0.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.j3.hydrogen.EN.v1.1.1.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.j3.hydrogen.IT.v1.1.1.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.j3.hydrogen.DE.v1.1.1.zip)
 
 **Joomla Plugin - Helium:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.j3.helium.EN.v1.1.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.j3.helium.IT.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.0/gpb.j3.helium.DE.v1.1.0.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.j3.helium.EN.v1.1.1.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.j3.helium.IT.v1.1.1.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.j3.helium.DE.v1.1.1.zip)
 
 ## Automatic Installation (Joomla only)
 1. Download the Plugin of the Google Plus Badge Particle **for Hydrogen or Helium**
@@ -35,7 +35,7 @@ Choose the correct download for your target platform. Joomla Plugin System suppo
 1. Download the correct version of the Google Plus Badge Particle Package
 2. Extract the files
 3. Copy the **html.twig** and the **yaml** file to your particle folder 
-   * the target folder for Joomla would be **/templates/{gantry_theme}/particles**
+   * the target folder for Joomla would be **/templates/{gantry_theme}/custom/particles**
    * the folder(s) for Wordpress and Grav may vary
    * If you are using Gantry **<5.3.2** please use the **Legacy Version** instead
 4. Go to your Gantry templating backend (e.g. Extensions/Templates)
