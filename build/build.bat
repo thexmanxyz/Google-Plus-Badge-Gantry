@@ -1,3 +1,4 @@
+@echo off
 REM #######################################################
 REM #                                                     #
 REM #   Google+ Badge - Particle for Gantry 5             #
@@ -12,8 +13,6 @@ REM #           Andreas Kar (thex) <andreas.kar@gmx.at>   #
 REM #                                                     #
 REM #######################################################
 
-@echo off
-
 REM --- Script Variables ---
 set remove_folders=0
 set log_files=0
@@ -23,7 +22,7 @@ set langs_upper=EN, IT, DE
 set default_lang=EN
 
 set prj_id=gpb
-set prj_rev=v1.1.0
+set prj_rev=v1.1.1
 set prj_name=gplus-badge
 set prj_fullname=Google Plus Badge - Particle
 

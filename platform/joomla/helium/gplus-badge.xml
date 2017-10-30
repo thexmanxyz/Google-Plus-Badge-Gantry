@@ -13,10 +13,10 @@
 		<h3>Google+ Badge - Particle for Gantry 5 Framework</h3>
 		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Marian Tanase (marian@tanase.it)</em>,&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
 		<h4 style="border-top:1px dotted #9ACFEB;padding-top:0.2rem;padding-bottom:1rem;"><a href="http://www.tanase.it" class="alert-link" target="_blank">Gantry Documentation and Guides in Italian to create professional Joomla Templates!</a></h4>
-		<p><b>NOTE</b>:&nbsp;This particle is installed for the G5 Helium.<br />If you want to install the particle on a different Gantry 5 template, you must manually copy the two files <code>gplus-badge.yaml</code> and <code>gplus-badge.html.twig</code> in <code>/templates/[TEMPLATE]/particles</code></p></div>]]>
+		<p><b>NOTE</b>:&nbsp;This particle is installed for the G5 Helium.<br />If you want to install the particle on a different Gantry 5 template, you must manually copy the two files <code>gplus-badge.yaml</code> and <code>gplus-badge.html.twig</code> in <code>/templates/[TEMPLATE]/custom/particles</code></p></div>]]>
     </description>
     <fileset>
-        <files folder="particles" target="templates/g5_helium/particles">
+        <files folder="particles" target="templates/g5_helium/custom/particles">
 			<filename>gplus-badge.html.twig</filename>
 			<filename>gplus-badge.yaml</filename>
 		</files>

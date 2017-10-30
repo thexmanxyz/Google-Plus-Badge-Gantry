@@ -78,8 +78,8 @@ form:
                   description: Die Ausrichtung des Badge.
                   default: portrait
                   options:
-                    portrait: Porträt
-                    landscape: Landschaft
+                    portrait: Vertikal
+                    landscape: Horizontal
 
                 glanguage:
                   type: select.select

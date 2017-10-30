@@ -76,12 +76,12 @@ form:
           description: Orientamento del badge.
           default: portrait
           options:
-            portrait: Ritratto
-            landscape: Paesaggio
+            portrait: Verticale
+            landscape: Orizzontale
 
         glanguage:
           type: select.select
-          label: Lingia
+          label: Lingua
           description: Selezionare la lingua del badge.
           default: en-US
           options:
