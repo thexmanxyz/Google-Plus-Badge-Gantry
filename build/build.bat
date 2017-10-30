@@ -32,10 +32,8 @@ set folder_src_leg=src\legacy
 set folder_platform_joomla=platform\joomla
 set folder_trans=translation
 set folder_part=particles
-
 set folder_temp=temp
 set folder_release=release
-
 set folder_def=default
 set folder_leg=legacy
 set folder_helium=%pkg_j3%_%pkg_helium%
@@ -54,26 +52,18 @@ echo -------------------------------
 echo.
 echo %msg_start%
 
-IF NOT EXIST %folder_temp% (
-	mkdir %folder_temp%
-)
-IF NOT EXIST %folder_release% (
-	mkdir %folder_release%
-)
+IF NOT EXIST %folder_temp% ( mkdir %folder_temp% )
+IF NOT EXIST %folder_release% (	mkdir %folder_release% )
 
 echo.
 cd %folder_temp%
 
-REM --- Call Particle Default Package Creation ----
+REM --- Call Particle Default / Legacy Package Creation ----
 call :create_particle "%folder_def%" "" "%folder_src_def%"
-
-REM --- Call Particle Legacy Package Creation ----
 call :create_particle "%folder_leg%" "%pkg_leg%." "%folder_src_leg%"
 
-REM --- Call Hydrogen Package Creation ----
+REM --- Call Hydrogen / Helium Package Creation ----
 call :create_j3plugin "%folder_hydro%" "%pkg_hydro%"
-
-REM --- Call Helium Package Creation ----
 call :create_j3plugin "%folder_helium%" "%pkg_helium%"
 
 REM --- Stop Script and Cleanup ---
@@ -175,7 +165,7 @@ REM --- Parameters: %~1 = language, %~2 = platform folder, %~3 = template name, 
 :copy_plugin_files
 	set temp_path=%~2\%~3\%prj_name%
 	set temp_trans_path=%~2\%~3\%folder_trans%\%~1\%prj_name%
-
+	
 	IF "%~1" == "%default_lang%" (
 		IF "%log_files%" == "1" ( echo !temp_path!.xml )
 		copy !temp_path!.xml %~4 >Nul
@@ -189,13 +179,12 @@ REM --- Creates Release Archives ---
 REM --- Parameters: %~1 = package name, %~2 = output folder, %~3 = create zip, %~4 = create tar.gz
 :create_archives
 	set arch_dest=..\%folder_release%\%~1
-
+	
 	IF "%~3" == "1" (
 		set zip_dest=!arch_dest!.zip
 		IF EXIST !zip_dest! ( del !zip_dest! )
 		7z a -tzip !zip_dest! .\%~2\* >Nul
 	)
-	
 	IF "%~4" == "1" (
 		set tar_dest=!arch_dest!.tar
 		set gzip_dest=!arch_dest!.tar.gz
