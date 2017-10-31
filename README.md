@@ -10,7 +10,7 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 * Google Plus Platform API
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry 5 themes - Helium and Hydrogen. The latest particle version is **v1.1.1**.
+Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry 5 themes - Helium and Hydrogen. The latest Particle version is **v1.1.1**.
 
 **Default Particle:**
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.EN.v1.1.1.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.IT.v1.1.1.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.1/gpb.particle.only.DE.v1.1.1.zip)
