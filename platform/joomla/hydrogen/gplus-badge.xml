@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="3.0">
     <name>Google+ Badge - Gantry Particle (Hydrogen)</name>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <creationDate>02.11.2017</creationDate>
     <author>Marian Tanase, Andreas Kar</author>
     <authorEmail>marian@tanase.it, andreas.kar@gmx.at</authorEmail>
