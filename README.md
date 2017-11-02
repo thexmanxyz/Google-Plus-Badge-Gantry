@@ -25,11 +25,11 @@ Choose the correct download for your target platform. Joomla Plugin System suppo
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.2/gpb.j3.helium.EN.v1.1.2.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.2/gpb.j3.helium.IT.v1.1.2.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.1.2/gpb.j3.helium.DE.v1.1.2.zip)
 
 ## Automatic Installation (Joomla only)
-1. Download the Plugin of the Google Plus Badge Particle **for Hydrogen or Helium**
+1. Download the Plugin of the Google Plus Badge Particle for **Hydrogen or Helium**
 2. Install over the Joomla Plugin System
 
 ## Manual Installation
-1. Download the correct version of the Google Plus Badge Particle Package
+1. Download the **Default or Legacy Package** of the Google Plus Badge Particle
 2. Extract the files
 3. Copy the **html.twig** and the **yaml** file to your particle folder 
    * the target folder for Joomla would be **/templates/{gantry_theme}/custom/particles**
