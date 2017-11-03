@@ -47,7 +47,7 @@ form:
         badge.tag.attributes:
           type: collection.keyvalue
           label: Tag Attributi
-          description: Zusätzliche Attribute für den HTML Container.
+          description: Attributi aggiuntivi per il contenitore HTML.
           key_placeholder: Chiave (ad e. style, name, ...)
           value_placeholder: Valore
           exclude: ['id', 'class']
@@ -221,7 +221,7 @@ form:
         js.option:
             type: select.select
             label: Opzione file JS
-            description: Select an option for the custom JS file, instead of the default CDN location.
+            description: Selezionare un opzione per il file JS personalizzato, invece della posizione CDN predefinita.
             default: disabled
             options:
                 disabled: Disabile
@@ -231,7 +231,7 @@ form:
         js.path:
             type: input.text
             label: Percorso JS
-            description: Path to the Google Platform JS file either on this server (relative from template/custom) or on a different server (absolute).
+            description: Percorso al file JS della piattaforma Google o su questo server (relativo al template/custom) o su un server diverso (assoluto).
             placeholder: percorso/al/JS
             default:
 

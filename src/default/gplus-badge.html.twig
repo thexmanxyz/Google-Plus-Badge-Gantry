@@ -15,8 +15,8 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% set bAttrs = '' %}
-{% if badge.tag.attributes %}
-    {% for attr in badge.tag.attributes %}
+{% if particle.badge.tag.attributes %}
+    {% for attr in particle.badge.tag.attributes %}
         {% for key, value in attr %}
             {% set bAttrs = bAttrs ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
         {% endfor %}
