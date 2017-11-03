@@ -221,7 +221,7 @@ form:
         js.option:
             type: select.select
             label: Opzione file JS
-            description: Selezionare un opzione per il file JS personalizzato, invece della posizione CDN predefinita.
+            description: Selezionare un'opzione per il file JS personalizzato, invece della posizione CDN predefinita.
             default: disabled
             options:
                 disabled: Disabile
