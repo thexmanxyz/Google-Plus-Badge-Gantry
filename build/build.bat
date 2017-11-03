@@ -47,6 +47,7 @@ set folder_trans=translation
 set folder_part=particles
 set folder_temp=temp
 set folder_release=release
+set folder_release=releases
 set folder_def=default
 set folder_leg=legacy
 set folder_helium=%pkg_j3%_%pkg_helium%
