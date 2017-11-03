@@ -14,64 +14,75 @@
 
 {% extends '@nucleus/partials/particle.html.twig' %}
 
-{% set gId = particle.gid|default('+LarryPage') %}
-{% set gProfileType = particle.gprofiletype|default('person') %}
-{% set gLayout = particle.glayout|default('portrait') %}
-{% set gTagline = particle.gshowtagline|default(true) %}
-{% set gCover = particle.gshowcoverphoto|default(true) %}
-{% set gTheme = particle.gtheme|default('light') %}
-{% set gWidth = particle.gwidth|default(300) %}
-{% set gJsPlace = particle.gjsplace|default('head') %}
-{% set gJsPrior = particle.gjspriority|default(0) %}
-{% set gType = 'text/javascript' %}
-{% set gJsExec = '' %}
+{% set bAttrs = '' %}
+{% if badge.tag.attributes %}
+    {% for attr in badge.tag.attributes %}
+        {% for key, value in attr %}
+            {% set bAttrs = bAttrs ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
 
-{% if gProfileType == 'community' %}
-    {% set gId = 'communities/' ~ gId %}
-    {% set gPhotoTag = 'data-showphoto' %}
-    {% set gShowOwner = ' data-showowners="' ~ _self.intToBool(particle.gshowowner|default(false)) ~ '"' %}
+{% set bId = particle.badge.id|default('+LarryPage') %}
+{% set bType = particle.badge.type|default('person') %}
+{% set bLayout = particle.badge.layout|default('portrait') %}
+{% set bTagline = particle.badge.tagline|default(true) %}
+{% set bCover = particle.badge.cover|default(true) %}
+{% set bTheme = particle.badge.theme|default('light') %}
+{% set bWidth = particle.badge.width|default(300) %}
+{% set bJsPlace = particle.js.placement|default('head') %}
+{% set bJsPrior = particle.js.priority|default(0) %}
+{% set bScriptType = 'text/javascript' %}
+{% set bJsExec = '' %}
+
+{% if bType == 'community' %}
+    {% set bId = 'communities/' ~ bId %}
+    {% set bPhotoTag = 'data-showphoto' %}
+    {% set bShowOwner = ' data-showowners="' ~ _self.intToBool(particle.badge.owner|default(false)) ~ '"' %}
 {% else %}
-    {% set gPhotoTag = 'data-showcoverphoto' %}
-    {% set gShowOwner = '' %}
+    {% set bPhotoTag = 'data-showcoverphoto' %}
+    {% set bShowOwner = '' %}
 {% endif %}
 
-{% if particle.glocaljs and particle.glocaljspath is not empty %}
-    {% set gJsPath = particle.glocaljspath %}
+{% if particle.js.option == 'local' and particle.js.path is not empty %}
+    {% set bJsPath = 'gantry-theme://' ~ particle.js.path %}
+{% elseif particle.js.option == 'remote' and particle.js.path is not empty %}
+    {% set bJsPath = particle.js.path %}
 {% else %}
-    {% set gJsPath = 'https://apis.google.com/js/platform.js' %}
+    {% set bJsPath = 'https://apis.google.com/js/platform.js' %}
 {% endif %}
 
-{% if particle.gjsexec == 'defer' or particle.gjsexec == 'both' %}
-    {% set gJsExec = 'defer="defer"' %}
+{% if particle.js.execution == 'defer' or particle.js.execution == 'both' %}
+    {% set bJsExec = 'defer="defer"' %}
 {% endif %}
 
-{% if particle.gjsexec == 'both' %}
-    {% set gJsExec = gJsExec ~ ' ' %}
+{% if particle.js.execution == 'both' %}
+    {% set bJsExec = bJsExec ~ ' ' %}
 {% endif %}
 
-{% if particle.gjsexec == 'async' or particle.gjsexec == 'both' %}
-    {% set gJsExec = gJsExec ~ 'async="async"' %}
+{% if particle.js.execution == 'async' or particle.js.execution == 'both' %}
+    {% set bJsExec = bJsExec ~ 'async="async"' %}
 {% endif %}
 
-{% if gJsExec is not empty %}
-    {% set gJsExec = ' ' ~ gJsExec %}
+{% if bJsExec is not empty %}
+    {% set bJsExec = ' ' ~ bJsExec %}
 {% endif %}
 
 {%- block particle -%}
-<div class="g-google-plus-badge{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}">
+<div class="g-google-plus-badge{% if particle.badge.css.class %} {{ particle.badge.css.class|e }}{% endif %}"{{ bAttrs|raw }}>
     <div class="g-grid">
         <div class="g-block">
             <div class="g-google-plus-badge-inner">
-                <div class="g-{{gProfileType}}" data-href="https://plus.google.com/{{gId|raw}}" data-width="{{gWidth}}" data-layout="{{gLayout}}" data-showtagline="{{_self.intToBool(gTagline)}}"{{gShowOwner|raw}} {{gPhotoTag}}="{{_self.intToBool(gCover)}}" data-theme="{{gTheme}}" data-rel="author"></div>
+                <div class="g-{{bType}}" data-href="https://plus.google.com/{{bId|raw}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
             </div>
         </div>
     </div>
 </div>
-{%- scripts in gJsPlace with { priority: gJsPrior } -%}
-    <script >
-        window.___gcfg = {lang: '{{particle.glanguage|default('en-US')}}', parsetags: '{{particle.gparsetag|default('onload')}}'};
+{%- scripts in bJsPlace with { priority: bJsPrior } -%}
+    <script>
+        window.___gcfg = {lang: '{{particle.badge.lang|default('en-US')}}', parsetags: '{{particle.js.loading|default('onload')}}'};
     </script>
-    <script type="{{gType}}" src="{{url(gJsPath)}}"{{gJsExec}}></script>
+    <script type="{{bScriptType}}" src="{{bJsPath}}"{{bJsExec}}></script>
 {%- endscripts -%}
 {%- endblock -%}
 {% macro intToBool(bVal) %}{{bVal ? 'true' : 'false'}}{% endmacro %}

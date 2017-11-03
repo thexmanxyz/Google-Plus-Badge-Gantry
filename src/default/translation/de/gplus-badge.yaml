@@ -27,11 +27,11 @@ form:
       type: separator.note
       class: alert alert-info
       content:  Mehr Informationen zur Particle Konfiguration finden Sie <a href="https://developers.google.com/+/web/badge/" target="_blank">hier</a>
-      
+
     enabled:
       type: input.checkbox
       label: Aktiviert
-      description: Globale Aktivierung des Particles
+      description: Globale Aktivierung des Google+ Badge Particles
       default: true
 
     tabs:
@@ -40,20 +40,28 @@ form:
         tab_appearance:
             label: Aussehen
             fields:
-                css.class:
+                badge.css.class:
                   type: input.selectize
                   label: CSS Klassen
                   description: Setzen Sie eine Klasse für die individuelles Gestaltung.
                   default: 
 
-                gid:
+                badge.tag.attributes:
+                  type: collection.keyvalue
+                  label: Tag Attribute
+                  description: Zusätzliche Attribute für den HTML Container.
+                  key_placeholder: Schlüssel (z.B.: style, name, ...)
+                  value_placeholder: Wert
+                  exclude: ['id', 'class']
+
+                badge.id:
                   type: input.text
                   label: Google+ ID
                   description: Die Google+ ID - https://plus.google.com/.../[ID].
                   placeholder: Geben Sie die Google+ ID ein
                   default: +LarryPage
 
-                gprofiletype:
+                badge.type:
                   type: select.select
                   label: Darstellungstyp
                   description: Wählen Sie die Darstellung in der das Badge gerendert werden soll.
@@ -63,7 +71,7 @@ form:
                     page: Seite
                     community: Community
 
-                gtheme:
+                badge.theme:
                   type: select.select
                   label: Themenfarbe
                   description: Wählen Sie die Themenfarbe die Sie verwenden möchten.
@@ -72,7 +80,7 @@ form:
                     light: Hell
                     dark: Dunkel
 
-                glayout:
+                badge.layout:
                   type: select.select
                   label:  Badge Ausrichtung
                   description: Die Ausrichtung des Badge.
@@ -81,7 +89,7 @@ form:
                     portrait: Vertikal
                     landscape: Horizontal
 
-                glanguage:
+                badge.lang:
                   type: select.select
                   label: Sprache
                   description: Wählen Sie die Sprache für das Badge.
@@ -149,15 +157,15 @@ form:
                     vi: Vietnamese
                     zu: Zulu
 
-                gwidth:
+                badge.width:
                   type: input.text
                   label: Breite
                   description: Geben Sie die Breit für das Badge in Pixel ein (nur Zahlen, keine Einheit wie zB 'px').
                   placeholder: 300
                   default: 300
 
-                gshowcoverphoto:
-                  type: input.radios
+                badge.cover:
+                  type: select.select
                   label: Titelbild
                   description: Konfigurieren Sie diese Option um das Titelbild zu zeigen oder zu verstecken.
                   default: true
@@ -165,8 +173,8 @@ form:
                     true: Zeigen
                     false: Verstecken
 
-                gshowtagline:
-                  type: input.radios
+                badge.tagline:
+                  type: select.select
                   label: Beschreibung
                   description: Konfigurieren Sie diese Option um die Beschreibung zu zeigen oder zu verstecken.
                   default: true
@@ -174,8 +182,8 @@ form:
                     true: Zeigen
                     false: Verstecken
 
-                gshowowner:
-                  type: input.radios
+                badge.owner:
+                  type: select.select
                   label: Besitzer anzeigen
                   description: Konfigurieren Sie diese Option um die Community Besitzer zu zeigen oder zu verstecken.
                   default: false
@@ -186,8 +194,8 @@ form:
         tab_js:
             label: JS
             fields:
-                gparsetag:
-                  type: input.radios
+                js.loading:
+                  type: select.select
                   label: Lade Mechanismus
                   description: Konfigurieren Sie diese Option um den Lade Mechanismus des Badge zu verändern.
                   default: onload
@@ -195,8 +203,8 @@ form:
                     onload: Onload
                     explicit: Explicit
 
-                gjsplace:
-                  type: input.radios
+                js.placement:
+                  type: select.select
                   label: JS Platzierung
                   description: Platzierung des JS.
                   default: head
@@ -204,27 +212,31 @@ form:
                     head: Header
                     footer: Footer
 
-                gjspriority:
+                js.priority:
                   type: input.text
                   label: JS Priorität
                   description: Die Priorität des JS.
                   placeholder: -10 ... 10
                   default: 0
 
-                glocaljs:
-                    type: input.checkbox
-                    label: Lokales JS aktivieren
-                    description: Aktivieren oder deaktivieren Sie die lokale JS Datei, statt CDN.
-                    default: 0
+                js.option:
+                    type: select.select
+                    label: JS Datei Optionen
+                    description: Wählen Sie eine Option für die benutzerdefinierte JS Datei, statt dem standardmäßigen CDN.
+                    default: disabled
+                    options:
+                        disabled: Deaktiviert
+                        local: Lokal
+                        remote: Remote
 
-                glocaljspath:
+                js.path:
                     type: input.text
-                    label: Lokaler JS Pfad
-                    description: Pfad zur Google Platform JS Datei auf diesem Server (relativ zum Root).
+                    label: JS Pfad
+                    description: Pfad zur Google Platform JS Datei auf diesem Server (relativ zu template/custom) oder auf einem anderen Server (absolut).
                     placeholder: Pfad/zum/JS
                     default:
 
-                gjsexec:
+                js.execution:
                     type: select.select
                     label: JS Ausführung
                     description: Die verwendete Ausführungsmethode für das Laden der JS Datei.
@@ -234,4 +246,4 @@ form:
                         none: Keine
                         async: Asynchron
                         defer: Verzögert
-                        both: Beide
+                        both: Beide  
