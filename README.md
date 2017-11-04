@@ -46,22 +46,21 @@ ___
  
 ## Supported API Parameters and Particle Options
 * Custom CSS Classes
-* Site types
+* Site Types
   * Profile, Page and Community
 * Theme
   * Light and Dark
 * Orientation
   * Landscape and Portrait
 * Badge Language (~60)
-* Sizing of badge
-* Photo for badge
-* Badge description
-* Community owner
+* Sizing of Badge
+* Photo for Badge
+* Badge Description
+* Community Owner
 * Loading Mechanism
-* JS priority and placement (head or footer)
+* JS Priority and Placement (head or footer)
 * JS Loading
   * Remote, Local and Default
-* Disable CDN
 * JS Execution
   * Asynchronous
   * Deferred
