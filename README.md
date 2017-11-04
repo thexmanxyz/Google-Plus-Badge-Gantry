@@ -59,7 +59,8 @@ ___
 * Community owner
 * Loading Mechanism
 * JS priority and placement (head / footer)
-* Server local JS loading
+* JS Loading
+  * Remote, Local and Default
 * Disable CDN
 * JS Execution
   * Asynchronous
