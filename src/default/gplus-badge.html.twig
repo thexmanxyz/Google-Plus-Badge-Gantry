@@ -44,6 +44,8 @@
     {% set bShowOwner = '' %}
 {% endif %}
 
+{% set bHref = 'https://plus.google.com/' ~ bId|raw %}
+
 {% if particle.js.option == 'local' and particle.js.path is not empty %}
     {% set hPath = particle.js.path %}
     {% if hPath is not empty and hPath|slice(0, 1)|lower == '/' %}
@@ -77,7 +79,7 @@
     <div class="g-grid">
         <div class="g-block">
             <div class="g-google-plus-badge-inner">
-                <div class="g-{{bType}}" data-href="https://plus.google.com/{{bId|raw}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
+                <div class="g-{{bType}}" data-href="https://plus.google.com/{{url(bHref)}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
             </div>
         </div>
     </div>
@@ -86,7 +88,7 @@
     <script>
         window.___gcfg = {lang: '{{particle.badge.lang|default('en-US')}}', parsetags: '{{particle.js.loading|default('onload')}}'};
     </script>
-    <script type="{{bScriptType}}" src="{{bJsPath}}"{{bJsExec}}></script>
+    <script type="{{bScriptType}}" src="{{url(bJsPath)}}"{{bJsExec}}></script>
 {%- endscripts -%}
 {%- endblock -%}
 {% macro intToBool(bVal) %}{{bVal ? 'true' : 'false'}}{% endmacro %}
