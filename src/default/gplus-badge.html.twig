@@ -45,7 +45,11 @@
 {% endif %}
 
 {% if particle.js.option == 'local' and particle.js.path is not empty %}
-    {% set bJsPath = 'gantry-theme://' ~ particle.js.path %}
+    {% set hPath = particle.js.path %}
+    {% if hPath is not empty and hPath|slice(0, 1)|lower == '/' %}
+        {% set hPath = hPath|slice(1, (hPath|length - 1)) %}
+    {% endif %}
+    {% set bJsPath = 'gantry-theme://' ~ hPath %}
 {% elseif particle.js.option == 'remote' and particle.js.path is not empty %}
     {% set bJsPath = particle.js.path %}
 {% else %}
