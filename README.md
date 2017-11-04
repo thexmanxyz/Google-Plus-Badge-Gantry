@@ -58,7 +58,7 @@ ___
 * Badge description
 * Community owner
 * Loading Mechanism
-* JS priority and placement (head / footer)
+* JS priority and placement (header or footer)
 * JS Loading
   * Remote, Local and Default
 * Disable CDN
