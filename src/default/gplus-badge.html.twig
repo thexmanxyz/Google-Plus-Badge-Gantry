@@ -76,13 +76,7 @@
 
 {%- block particle -%}
 <div class="g-google-plus-badge{% if particle.badge.css.class %} {{particle.badge.css.class|e}}{% endif %}"{{bAttrs|raw}}>
-    <div class="g-grid">
-        <div class="g-block">
-            <div class="g-google-plus-badge-inner">
-                <div class="g-{{bType}}" data-href="{{url(bHref)}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
-            </div>
-        </div>
-    </div>
+    <div class="g-{{bType}}" data-href="{{url(bHref)}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
 </div>
 {%- scripts in bJsPlace with { priority: bJsPrior } -%}
     <script>
