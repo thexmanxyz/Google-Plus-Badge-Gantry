@@ -14,13 +14,19 @@
 
 {% extends '@nucleus/partials/particle.html.twig' %}
 
-{% set bAttrs = '' %}
+{% set cAttrs = '' %}
 {% if particle.badge.tag.attributes %}
     {% for attr in particle.badge.tag.attributes %}
         {% for key, value in attr %}
-            {% set bAttrs = bAttrs ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+            {% set cAttrs = cAttrs ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
         {% endfor %}
     {% endfor %}
+{% endif %}
+
+{% if particle.badge.css.class %}
+    {% set cClass = ' ' ~ particle.badge.css.class %}
+{% else %}
+    {% set cClass = '' %}
 {% endif %}
 
 {% set bId = particle.badge.id|default('+LarryPage') %}
@@ -75,7 +81,7 @@
 {% endif %}
 
 {%- block particle -%}
-<div class="g-google-plus-badge{% if particle.badge.css.class %} {{particle.badge.css.class|e}}{% endif %}"{{bAttrs|raw}}>
+<div class="g-google-plus-badge{{cClass|e}}"{{cAttrs|raw}}>
     <div class="g-{{bType}}" data-href="{{url(bHref)}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
 </div>
 {%- scripts in bJsPlace with { priority: bJsPrior } -%}
