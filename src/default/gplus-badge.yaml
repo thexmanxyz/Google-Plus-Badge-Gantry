@@ -40,12 +40,6 @@ form:
         tab_appearance:
             label: Appearance
             fields:
-                badge.css.class:
-                  type: input.selectize
-                  label: CSS Classes
-                  description: Set a specific CSS class for custom styling.
-                  default: 
-                  
                 badge.tag.attributes:
                   type: collection.keyvalue
                   label: Tag Attributes
@@ -53,6 +47,12 @@ form:
                   key_placeholder: Key (e.g. style, name, ...)
                   value_placeholder: Value
                   exclude: ['id', 'class']
+
+                badge.css.class:
+                  type: input.selectize
+                  label: CSS Classes
+                  description: Set a specific CSS class for custom styling.
+                  default: 
 
                 badge.id:
                   type: input.text

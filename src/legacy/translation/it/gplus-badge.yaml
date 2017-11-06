@@ -38,12 +38,6 @@ form:
       type: container.set
       label: Aspetto
       fields:
-        badge.css.class:
-          type: input.selectize
-          label: CSS Classe
-          description: Classe CSS personalizzata.
-          default: 
-
         badge.tag.attributes:
           type: collection.keyvalue
           label: Tag Attributi
@@ -51,6 +45,12 @@ form:
           key_placeholder: Chiave (ad e. style, name, ...)
           value_placeholder: Valore
           exclude: ['id', 'class']
+
+        badge.css.class:
+          type: input.selectize
+          label: CSS Classe
+          description: Classe CSS personalizzata.
+          default: 
 
         badge.id:
           type: input.text
