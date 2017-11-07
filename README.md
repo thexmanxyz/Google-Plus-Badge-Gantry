@@ -28,11 +28,11 @@ ___
 ___
 
 ## Automatic Installation (Joomla only)
-1. Download the Plugin of the Google Plus Badge Particle for **Hydrogen or Helium**.
+1. Download the Plugin of the *Google Plus Badge Particle* for **Hydrogen or Helium**.
 2. Install it over the Joomla Plugin System.
 
 ## Manual Installation
-1. Download the **Default or Legacy Package** of the Google Plus Badge Particle. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
+1. Download the **Default or Legacy Package** of the *Google Plus Badge Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
 3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the list below to determine where the template folder for your CMS is located.
 
@@ -75,7 +75,7 @@ Please be aware that the template folder path varies in dependence of the used C
   * Deferred
 
 ## Showroom
-Insight of the Google Plus Badge - Gantry Particle configuration:
+Insight of the *Google Plus Badge - Gantry Particle* configuration:
 
 **Backend (1)** - *[Appearance](/screenshots/backend_appearance.png)*
 
