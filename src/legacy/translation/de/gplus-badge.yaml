@@ -31,7 +31,7 @@ form:
     enabled:
       type: input.checkbox
       label: Aktiviert
-      description: Globale Aktivierung des Google+ Badge Particles
+      description: Globale Aktivierung des Google+ Badge Particles.
       default: true
 
     set_appearance:
