@@ -51,7 +51,7 @@ form:
                 badge.css.class:
                   type: input.selectize
                   label: CSS Klassen
-                  description: Setzen Sie eine Klasse für die individuelles Gestaltung.
+                  description: Setzen Sie eine Klasse für die individuelle Gestaltung.
                   default: 
 
                 badge.id:
