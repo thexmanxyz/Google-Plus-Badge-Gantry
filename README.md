@@ -67,7 +67,7 @@ ___
   * Deferred
 
 ## Showroom
-Insight of Google Plus Badge - Gantry Particle configuration:
+Insight of the Google Plus Badge - Gantry Particle configuration:
 
 **Backend (1)** - *[Appearance](/screenshots/backend_appearance.png)*
 
@@ -77,7 +77,7 @@ Insight of Google Plus Badge - Gantry Particle configuration:
 
 ![2](/screenshots/backend_js.png)
 
-Examples for different supported Google+ Badges:
+Examples for the different supported Google+ Badges:
 
 **Frontend (1)** - *[Profile](/screenshots/frontend_profile.png)*
 
