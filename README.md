@@ -34,18 +34,18 @@ ___
 ## Manual Installation
 1. Download the **Default or Legacy Package** of the Google Plus Badge Particle. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
-3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/{gantry_theme}/custom/particles`. Please check the list below to determine where you find the location of the template folder for your CMS.
+3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/{gantry_theme}/custom/particles`. Please check the list below to determine where the template folder for your CMS is located.
 
-## CMS Template Folder
-Please be aware that the template folder varies in dependence of the used CMS. Here is a list of the different folder paths:
+### CMS Template Folder
+Please be aware that the template folder path varies in dependence of the used CMS. Here is a list of the folders for the different CMS.
 
-### Wordpress:
+#### Wordpress:
 `/wp-content/themes/{gantry_theme}`
 
-### Joomla:
+#### Joomla:
 `/templates/{gantry_theme}`
 
-### Grav:
+#### Grav:
 `/user/data/gantry5/themes`
 
 ## Configuration
