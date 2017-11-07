@@ -13,7 +13,7 @@
 		<h3>Google+ Badge - Particella per Gantry 5 Framework</h3>
 		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Marian Tanase (marian@tanase.it)</em>,&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
 		<h4 style="border-top:1px dotted #9ACFEB;padding-top:0.2rem;padding-bottom:1rem;"><a href="http://www.tanase.it" class="alert-link" target="_blank">Documentazione e Guide Gantry in italiano per creare Template Joomla! professionali.</a></h4>
-		<p><b>NOTA</b>:&nbsp;La particella viene installata nel template G5 Hydrogen.<br />Se si desidera installare su un template Gantry 5 diverso, bisogna copiare manualmente i due file <code>gplus-badge.yaml</code> e <code>gplus-badge.html.twig</code> in <code>/templates/[NOME-TEMPLATE]/custom/particles</code></p></div>]]>
+		<p><b>NOTA</b>:&nbsp;La particella viene installata nel template G5 Hydrogen.<br />Se si desidera installare su un template Gantry 5 diverso, bisogna copiare manualmente i due file <code>gplus-badge.yaml</code> e <code>gplus-badge.html.twig</code> in <code>/templates/[NOME-TEMPLATE]/custom/particles</code>.</p></div>]]>
     </description>
     <fileset>
         <files folder="particles" target="templates/g5_hydrogen/custom/particles">
