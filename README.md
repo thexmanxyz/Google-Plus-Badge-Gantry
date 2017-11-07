@@ -34,16 +34,24 @@ ___
 ## Manual Installation
 1. Download the **Default or Legacy Package** of the Google Plus Badge Particle. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
-3. Copy the `.html.twig` and the `.yaml` file to your particle folder. The target folder varies depending on the used system.
-   
-   * **Wordpress:** `/wp-content/themes/{gantry_theme}/custom/particles`
-   * **Joomla:** `/templates/{gantry_theme}/custom/particles`
-   * **Grav:** `/user/data/gantry5/themes/{gantry_theme}/particles`
-   
+3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/{gantry_theme}/custom/particles`. Please check the list below to determine where you find the location of the template folder for your CMS.
+
+## CMS Template Folder
+Please be aware that the template folder varies in dependence of the used CMS. Here is a list of the different folder paths:
+
+### Wordpress:
+`/wp-content/themes/{gantry_theme}`
+
+### Joomla:
+`/templates/{gantry_theme}`
+
+### Grav:
+`/user/data/gantry5/themes`
+
 ## Configuration
- 1. Go to your Gantry templating backend (e.g. Extensions/Templates).
- 2. Switch to **Layout** and add the new appearing Particle called **Google+ Badge** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
- 3. Configure the appearance according to your favor.
+1. Go to your Gantry templating backend (e.g. Extensions/Templates).
+2. Switch to **Layout** and add the new appearing Particle called **Google+ Badge** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
+3. Configure the appearance according to your favor.
  
 ## Supported API Parameters and Particle Options
 * Custom CSS Classes
