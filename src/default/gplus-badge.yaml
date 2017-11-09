@@ -17,10 +17,6 @@ description: Displays a Google+ Badge.
 type: particle
 icon: fa-google-plus-square
 
-#configuration:
-#  caching:
-#    type: static
-
 form:
   fields:
     _info:
