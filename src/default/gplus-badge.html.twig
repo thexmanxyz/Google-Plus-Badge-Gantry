@@ -81,14 +81,14 @@
 {% endif %}
 
 {%- block particle -%}
-<div class="g-google-plus-badge{{cClass|e}}"{{cAttrs|raw}}>
-    <div class="g-{{bType}}" data-href="{{url(bHref)}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
-</div>
-{%- scripts in bJsPlace with { priority: bJsPrior } -%}
-    <script>
-        window.___gcfg = {lang: '{{particle.badge.lang|default('en-US')}}', parsetags: '{{particle.js.loading|default('onload')}}'};
-    </script>
-    <script type="{{bScriptType}}" src="{{url(bJsPath)}}"{{bJsExec}}></script>
-{%- endscripts -%}
+    <div class="g-google-plus-badge{{cClass|e}}"{{cAttrs|raw}}>
+        <div class="g-{{bType}}" data-href="{{url(bHref)}}" data-width="{{bWidth}}" data-layout="{{bLayout}}" data-showtagline="{{_self.intToBool(bTagline)}}"{{bShowOwner|raw}} {{bPhotoTag}}="{{_self.intToBool(bCover)}}" data-theme="{{bTheme}}" data-rel="author"></div>
+    </div>
+    {%- scripts in bJsPlace with { priority: bJsPrior } -%}
+        <script>
+            window.___gcfg = {lang: '{{particle.badge.lang|default('en-US')}}', parsetags: '{{particle.js.loading|default('onload')}}'};
+        </script>
+        <script type="{{bScriptType}}" src="{{url(bJsPath)}}"{{bJsExec}}></script>
+    {%- endscripts -%}
 {%- endblock -%}
 {% macro intToBool(bVal) %}{{bVal ? 'true' : 'false'}}{% endmacro %}
