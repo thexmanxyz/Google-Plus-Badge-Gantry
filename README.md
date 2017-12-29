@@ -115,5 +115,5 @@ Thanks to Google for the Google Plus Platform API and the Gantry team for provid
 
 Thanks to [mariantanase](https://github.com/mariantanase) for the inspiration as well as the Italian back- and frontend translation.
 
-## by [mariantanase](https://github.com/mariantanase), [thex](https://github.com/thexmanxyz)
+## by [thex](https://github.com/thexmanxyz), [mariantanase](https://github.com/mariantanase)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
