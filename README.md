@@ -113,5 +113,7 @@ None
 ## Credits
 Thanks to Google for the Google Plus Platform API and the Gantry team for providing a modern templating framework.
 
+Thanks to [mariantanase](https://github.com/mariantanase) for the inspiration as well as the Italian back- and frontend translation.
+
 ## by [mariantanase](https://github.com/mariantanase), [thex](https://github.com/thexmanxyz)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
