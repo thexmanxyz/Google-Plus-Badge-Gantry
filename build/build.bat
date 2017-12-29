@@ -1,7 +1,7 @@
 @echo off
 REM #######################################################
 REM #                                                     #
-REM #   Google+ Badge - Particle for Gantry 5             #
+REM #   Google+ Badge - Particle for Gantry               #
 REM #                                                     #
 REM #   Purpose: This project adds the Google             #
 REM #            Plus Profile, Page or Community          #

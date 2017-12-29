@@ -10,10 +10,10 @@
     <license>MIT - see LICENSE.pdf</license>
     <description>
         <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-		<h3>Google+ Badge - Particle for Gantry 5 Framework</h3>
+		<h3>Google+ Badge - Particle for Gantry Framework</h3>
 		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Marian Tanase (marian@tanase.it)</em>,&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
 		<h4 style="border-top:1px dotted #9ACFEB;padding-top:0.2rem;padding-bottom:1rem;"><a href="http://www.tanase.it" class="alert-link" target="_blank">Gantry Dokumentation und Guides für die professionelle Template Erzeugung in italienisch!</a></h4>
-		<p><b>INFO</b>:&nbsp;Dieses Particle wurde für G5 Hydrogen installiert.<br />Wenn Sie das Particle für ein anderes Template installieren möchten, so müssen Sie die zwei folgenden Dateien <code>gplus-badge.yaml</code> und <code>gplus-badge.html.twig</code> in den Ordner <code>/templates/[TEMPLATE]/custom/particles</code> kopieren.</p></div>]]>
+		<p><b>INFO</b>:&nbsp;Dieses Particle wurde für Gantry Hydrogen installiert.<br />Wenn Sie das Particle für ein anderes Gantry Template installieren möchten, so müssen Sie die zwei folgenden Dateien <code>gplus-badge.yaml</code> und <code>gplus-badge.html.twig</code> in den Ordner <code>/templates/[TEMPLATE]/custom/particles</code> kopieren.</p></div>]]>
     </description>
     <fileset>
         <files folder="particles" target="templates/g5_hydrogen/custom/particles">

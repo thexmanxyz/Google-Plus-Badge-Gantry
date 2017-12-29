@@ -1,4 +1,4 @@
-# Google Plus Badge - Particle for Gantry 5
+# Google Plus Badge - Particle for Gantry
 This project contains a Gantry Particle and adds the [Google+ Badge API](https://developers.google.com/+/web/badge/) functionality to the Gantry templating framework. **Google Plus Badge** encapsulates the parameterization of the Google+ service within a Gantry Particle. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMS systems are supported:
 * Joomla
 * Wordpress
@@ -6,11 +6,11 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 
 ## Prerequisites
 * CMS (Joomla, Wordpress, Grav)
-* Gantry 5 Templating Framework and Theme
+* Gantry Templating Framework and Theme
 * Google Plus Platform API
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry 5 themes - Helium and Hydrogen. The latest Particle version is **v1.2.5**.
+Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Particle version is **v1.2.5**.
 
 **Attention:** When migrating from **v1.1.2** to **v1.2.0** or higher the existing settings of the particle will be reset.
 ___
@@ -108,10 +108,10 @@ None
 ## Dependencies
 [Google+ Badge](https://developers.google.com/+/web/badge/)
 
-[Gantry 5 Framework](http://gantry.org/)
+[Gantry Framework](http://gantry.org/)
 
 ## Credits
-Thanks to Google for the Google Plus Platform API and the Gantry 5 team for providing a modern templating framework.
+Thanks to Google for the Google Plus Platform API and the Gantry team for providing a modern templating framework.
 
 ## by [mariantanase](https://github.com/mariantanase), [thex](https://github.com/thexmanxyz)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
