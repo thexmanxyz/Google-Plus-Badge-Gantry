@@ -10,21 +10,21 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 * Google Plus Platform API
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Particle version is **v1.2.6**.
+Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Particle version is **v1.2.7**.
 
 **Attention:** When migrating from **v1.1.2** to **v1.2.0** or higher the existing settings of the particle will be reset.
 ___
 **Default Particle:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.particle.only.EN.v1.2.6.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.particle.only.IT.v1.2.6.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.particle.only.DE.v1.2.6.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.particle.only.EN.v1.2.7.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.particle.only.IT.v1.2.7.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.particle.only.DE.v1.2.7.zip)
 
 **Legacy Particle - Gantry <5.3.2:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.particle.only.legacy.EN.v1.2.6.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.particle.only.legacy.IT.v1.2.6.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.particle.only.legacy.DE.v1.2.6.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.particle.only.legacy.EN.v1.2.7.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.particle.only.legacy.IT.v1.2.7.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.particle.only.legacy.DE.v1.2.7.zip)
 
 **Joomla Plugin - Hydrogen:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.j3.hydrogen.EN.v1.2.6.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.j3.hydrogen.IT.v1.2.6.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.j3.hydrogen.DE.v1.2.6.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.j3.hydrogen.EN.v1.2.7.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.j3.hydrogen.IT.v1.2.7.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.j3.hydrogen.DE.v1.2.7.zip)
 
 **Joomla Plugin - Helium:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.j3.helium.EN.v1.2.6.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.j3.helium.IT.v1.2.6.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.6/gpb.j3.helium.DE.v1.2.6.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.j3.helium.EN.v1.2.7.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.j3.helium.IT.v1.2.7.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.7/gpb.j3.helium.DE.v1.2.7.zip)
 ___
 
 ## Automatic Installation (Joomla only)
@@ -35,6 +35,7 @@ ___
 1. Download the **Default or Legacy Package** of the *Google Plus Badge Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
 3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the list below to determine where the template folder for your CMS is located.
+4. [Optional] Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create it if it does not exist.
 
 ## CMS Template Folder
 Please be aware that the template folder path varies in dependence of the used CMS. Here is a list of the folders for the different platforms:

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="3.0">
     <name>Google+ Badge - Gantry Particle (Hydrogen)</name>
-    <version>1.2.6</version>
-    <creationDate>29.12.2017</creationDate>
+    <version>1.2.7</version>
+    <creationDate>24.01.2018</creationDate>
     <author>Marian Tanase, Andreas Kar</author>
     <authorEmail>marian@tanase.it, andreas.kar@gmx.at</authorEmail>
     <authorUrl>http://www.tanase.it</authorUrl>
@@ -19,6 +19,9 @@
         <files folder="particles" target="templates/g5_hydrogen/custom/particles">
 			<filename>gplus-badge.html.twig</filename>
 			<filename>gplus-badge.yaml</filename>
+		</files>
+	    <files folder="js" target="templates/g5_hydrogen/custom/js">
+			<filename>platform.js</filename>
 		</files>
     </fileset>
 </extension>
