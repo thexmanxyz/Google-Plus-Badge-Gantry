@@ -22,7 +22,7 @@ set langs_upper=EN, IT, DE
 set default_lang=EN
 
 set prj_id=gpb
-set prj_rev=v1.2.7
+set prj_rev=v1.2.8
 set prj_name=gplus-badge
 set prj_fullname=Google Plus Badge - Particle
 
