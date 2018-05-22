@@ -10,18 +10,18 @@
     <license>MIT - see LICENSE.pdf</license>
     <description>
         <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-		<h3>Google+ Badge - Particella per Gantry Framework</h3>
-		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Marian Tanase (marian@tanase.it)</em>,&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
-		<h4 style="border-top:1px dotted #9ACFEB;padding-top:0.2rem;padding-bottom:1rem;"><a href="http://www.tanase.it" class="alert-link" target="_blank">Documentazione e Guide Gantry in italiano per creare Template Joomla! professionali.</a></h4>
-		<p><b>NOTA</b>:&nbsp;La particella viene installata nel template Gantry Hydrogen.<br />Se si desidera installare su un template Gantry diverso, bisogna copiare manualmente i due file <code>gplus-badge.yaml</code> e <code>gplus-badge.html.twig</code> in <code>/templates/[NOME-TEMPLATE]/custom/particles</code>.<br>Il file Javascript è facoltativo.</p></div>]]>
+        <h3>Google+ Badge - Particella per Gantry Framework</h3>
+        <span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Marian Tanase (marian@tanase.it)</em>,&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
+        <h4 style="border-top:1px dotted #9ACFEB;padding-top:0.2rem;padding-bottom:1rem;"><a href="http://www.tanase.it" class="alert-link" target="_blank">Documentazione e Guide Gantry in italiano per creare Template Joomla! professionali.</a></h4>
+        <p><b>NOTA</b>:&nbsp;La particella viene installata nel template Gantry Hydrogen.<br />Se si desidera installare su un template Gantry diverso, bisogna copiare manualmente i due file <code>gplus-badge.yaml</code> e <code>gplus-badge.html.twig</code> in <code>/templates/[NOME-TEMPLATE]/custom/particles</code>.<br>Il file Javascript è facoltativo.</p></div>]]>
     </description>
     <fileset>
         <files folder="particles" target="templates/g5_hydrogen/custom/particles">
-			<filename>gplus-badge.html.twig</filename>
-			<filename>gplus-badge.yaml</filename>
-		</files>
-	    <files folder="js" target="templates/g5_hydrogen/custom/js">
-			<filename>platform.js</filename>
-		</files>
+            <filename>gplus-badge.html.twig</filename>
+            <filename>gplus-badge.yaml</filename>
+        </files>
+        <files folder="js" target="templates/g5_hydrogen/custom/js">
+            <filename>platform.js</filename>
+        </files>
     </fileset>
 </extension>
