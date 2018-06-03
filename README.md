@@ -20,6 +20,9 @@ ___
 **Legacy Particle - Gantry <5.3.2:**
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.particle.only.legacy.EN.v1.2.8.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.particle.only.legacy.IT.v1.2.8.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.particle.only.legacy.DE.v1.2.8.zip)
 
+**Joomla Plugin - Gantry Global:**
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.j3.global.EN.v1.2.8.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.j3.global.IT.v1.2.8.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.j3.global.DE.v1.2.8.zip)
+
 **Joomla Plugin - Hydrogen:**
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.j3.hydrogen.EN.v1.2.8.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.j3.hydrogen.IT.v1.2.8.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.2.8/gpb.j3.hydrogen.DE.v1.2.8.zip)
 
@@ -30,6 +33,8 @@ ___
 ## Automatic Installation (Joomla only)
 1. Download the Plugin of the *Google Plus Badge Particle* for **Hydrogen or Helium**.
 2. Install it over the Joomla Plugin System.
+
+*If you install the plugin globally be aware that the resource location changes to `/media/gantry5/engines/nucleus`*
 
 ## Manual Installation
 1. Download the **Default or Legacy Package** of the *Google Plus Badge Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.

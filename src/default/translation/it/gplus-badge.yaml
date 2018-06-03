@@ -218,19 +218,20 @@ form:
                 js.option:
                     type: select.select
                     label: Opzione file JS
-                    description: Selezionare un'opzione per il file JS personalizzato, invece della posizione CDN predefinita.
+                    description: Selezionare un'opzione per il file JS personalizzato, invece della posizione CDN predefinita. Locale = 'templates/G_TEMPLATE/custom/js', Global = 'media/gantry5/engines/nucleus/js', Custome = ogni percorso relativo o assoluto
                     default: disabled
                     options:
-                        disabled: Disabile
-                        local: Locale
-                        remote: Remote
+                        disabled: Disabile (CDN)
+                        local: Locale (Template)
+                        global: Global (Gantry)
+                        custom: Costume
 
                 js.path:
                     type: input.text
                     label: Percorso JS
                     description: Percorso al file JS della piattaforma Google o su questo server (relativo al template/custom) o su un server diverso (assoluto).
                     placeholder: percorso/al/JS
-                    default:
+                    default: platform.js
 
                 js.execution:
                     type: select.select

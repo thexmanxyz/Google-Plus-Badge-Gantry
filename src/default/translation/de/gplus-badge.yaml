@@ -218,19 +218,20 @@ form:
                 js.option:
                     type: select.select
                     label: JS Datei Optionen
-                    description: Wählen Sie eine Option für die benutzerdefinierte JS Datei, statt dem standardmäßigen CDN.
+                    description: Wählen Sie eine Option für die benutzerdefinierte JS Datei, statt dem standardmäßigen CDN. Lokal = 'templates/G_TEMPLATE/custom/js', Global = 'media/gantry5/engines/nucleus/js', Benutzerdefiniert = jeder relative oder absolute Pfad
                     default: disabled
                     options:
-                        disabled: Deaktiviert
-                        local: Lokal
-                        remote: Remote
+                        disabled: Deaktiviert (CDN)
+                        local: Lokal (Template)
+                        global: Global (Gantry)
+                        custom: Benutzerdefiniert
 
                 js.path:
                     type: input.text
                     label: JS Pfad
                     description: Pfad zur Google Platform JS Datei auf diesem Server (relativ zu template/custom) oder auf einem anderen Server (absolut).
                     placeholder: Pfad/zum/JS
-                    default:
+                    default: platform.js
 
                 js.execution:
                     type: select.select

@@ -39,7 +39,8 @@
 {% set bJsPlace = particle.js.placement|default('head') %}
 {% set bJsPrior = particle.js.priority|default(0) %}
 {% set bScriptType = 'text/javascript' %}
-{% set bJsExec = '' %}
+{% set bJsExecAttr = '' %}
+{% set bJsExec = particle.js.execution|default("both") %}
 
 {% if bType == 'community' %}
     {% set bId = 'communities/' ~ bId %}
@@ -52,33 +53,24 @@
 
 {% set bHref = 'https://plus.google.com/' ~ bId|raw %}
 
-{% if particle.js.option == 'local' and particle.js.path is not empty %}
-    {% set hPath = particle.js.path %}
-    {% if hPath is not empty and hPath|slice(0, 1)|lower == '/' %}
-        {% set hPath = hPath|slice(1, (hPath|length - 1)) %}
-    {% endif %}
-    {% set bJsPath = 'gantry-theme://' ~ hPath %}
-{% elseif particle.js.option == 'remote' and particle.js.path is not empty %}
-    {% set bJsPath = particle.js.path %}
-{% else %}
-    {% set bJsPath = 'https://apis.google.com/js/platform.js' %}
+{% if bJsExec == 'defer' or bJsExec == 'both' %}
+    {% set bJsExecAttr = 'defer="defer"' %}
 {% endif %}
 
-{% if particle.js.execution == 'defer' or particle.js.execution == 'both' %}
-    {% set bJsExec = 'defer="defer"' %}
+{% if bJsExec == 'both' %}
+    {% set bJsExecAttr = bJsExecAttr ~ ' ' %}
 {% endif %}
 
-{% if particle.js.execution == 'both' %}
-    {% set bJsExec = bJsExec ~ ' ' %}
+{% if bJsExec == 'async' or bJsExec == 'both' %}
+    {% set bJsExecAttr = bJsExecAttr ~ 'async="async"' %}
 {% endif %}
 
-{% if particle.js.execution == 'async' or particle.js.execution == 'both' %}
-    {% set bJsExec = bJsExec ~ 'async="async"' %}
+{% if bJsExecAttr is not empty %}
+    {% set bJsExecAttr = ' ' ~ bJsExecAttr %}
 {% endif %}
 
-{% if bJsExec is not empty %}
-    {% set bJsExec = ' ' ~ bJsExec %}
-{% endif %}
+{% set cdnRepo = 'https://apis.google.com/js' %}
+{% set bJsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'platform', 'js') %}
 
 {%- block particle -%}
     <div class="g-google-plus-badge{{cClass|e}}"{{cAttrs|raw}}>
@@ -88,7 +80,30 @@
         <script>
             window.___gcfg = {lang: '{{particle.badge.lang|default('en-US')}}', parsetags: '{{particle.js.loading|default('onload')}}'};
         </script>
-        <script type="{{bScriptType}}" src="{{url(bJsPath)}}"{{bJsExec}}></script>
+        <script type="{{bScriptType}}" src="{{url(bJsPath)}}"{{bJsExecAttr}}></script>
     {%- endscripts -%}
 {%- endblock -%}
-{% macro intToBool(bVal) %}{{bVal ? 'true' : 'false'}}{% endmacro %}
+{%- macro intToBool(bVal) -%}{{bVal ? 'true' : 'false'}}{%- endmacro -%}
+{%- macro getResourceFilePath(element, cdnUrl, cdnFile, type) -%}
+    {%- set elPath = element.path|default(cdnFile ~ "." ~ type) -%}
+    {%- set elOpt = element.option|default("disabled") -%}
+    {%- set path = empty -%}
+    {%- if elOpt == 'local' or elOpt == 'global' -%}
+        {%- set hPath = elPath -%}
+        {%- if hPath is not empty and hPath|slice(0, 1)|lower == '/' -%}
+            {%- set hPath = hPath|slice(1, (hPath|length - 1)) -%}
+        {%- endif -%}
+        {%- set hPath = type ~ '/' ~ hPath -%}
+        {%- if elOpt == 'local' -%}
+            {%- set path = 'gantry-theme://' ~ hPath -%}
+        {%- else -%}
+            {%- set path = 'media/gantry5/engines/nucleus/' ~ hPath -%}
+        {%- endif -%}
+    {%- elseif elOpt == 'custom' -%}
+        {%- set path = elPath -%}
+    {%- endif -%}
+    {%- if path is empty -%}
+        {%- set path = cdnUrl ~ '/' ~ cdnFile ~ "." ~ type -%}
+    {%- endif -%}
+    {{- path|raw -}}
+{%- endmacro -%}
