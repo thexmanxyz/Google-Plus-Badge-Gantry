@@ -19,7 +19,7 @@ set scr_log_files=0
 
 REM --- Project Variables ---
 set prj_id=gpb
-set prj_rev=v1.2.8
+set prj_rev=v1.3.0
 set prj_name=gplus-badge
 set prj_fullname=Google Plus Badge - Particle
 set prj_title_hr=--------------------------------
