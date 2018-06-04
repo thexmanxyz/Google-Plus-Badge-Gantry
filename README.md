@@ -20,7 +20,7 @@ ___
 **Legacy Particle - Gantry <5.3.2:**
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.0/gpb.particle.only.legacy.EN.v1.3.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.0/gpb.particle.only.legacy.IT.v1.3.0.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.0/gpb.particle.only.legacy.DE.v1.3.0.zip)
 
-**Joomla Plugin - Gantry Global:**
+**Joomla Plugin - All Templates (Global):**
 [English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.0/gpb.j3.global.EN.v1.3.0.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.0/gpb.j3.global.IT.v1.3.0.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.0/gpb.j3.global.DE.v1.3.0.zip)
 
 **Joomla Plugin - Hydrogen:**
