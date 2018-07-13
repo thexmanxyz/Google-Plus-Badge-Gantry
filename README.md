@@ -117,9 +117,9 @@ None
 [Gantry Framework](http://gantry.org/)
 
 ## Credits
-Thanks to the Gantry team for providing a modern templating framework.
+Thanks to the [Gantry](https://github.com/gantry) team for providing a modern templating framework.
 
-Thanks to Google for the Google Plus Platform API and the Gantry team for providing a modern templating framework.
+Thanks to Google for the Google Plus Platform API.
 
 Thanks to [mariantanase](https://github.com/mariantanase) for the inspiration as well as the Italian back- and frontend translation.
 
