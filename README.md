@@ -10,24 +10,24 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 * Google Plus Platform API
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for all Gantry themes globally and locally for Helium or Hydrogen. The latest Particle version is **v1.3.2**.
+Choose the correct download for your target platform. Joomla Plugin System supported for all Gantry themes globally and locally for Helium or Hydrogen. The latest Particle version is **v1.3.3**.
 
 **Attention:** When migrating from **v1.1.2** to **v1.2.0** or higher the existing settings of the particle will be reset.
 ___
 **Default Particle:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.particle.only.EN.v1.3.2.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.particle.only.IT.v1.3.2.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.particle.only.DE.v1.3.2.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.particle.only.EN.v1.3.3.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.particle.only.IT.v1.3.3.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.particle.only.DE.v1.3.3.zip)
 
 **Legacy Particle - Gantry <5.3.2:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.particle.only.legacy.EN.v1.3.2.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.particle.only.legacy.IT.v1.3.2.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.particle.only.legacy.DE.v1.3.2.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.particle.only.legacy.EN.v1.3.3.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.particle.only.legacy.IT.v1.3.3.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.particle.only.legacy.DE.v1.3.3.zip)
 
 **Joomla Plugin - All Templates (Global):**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.global.EN.v1.3.2.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.global.IT.v1.3.2.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.global.DE.v1.3.2.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.global.EN.v1.3.3.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.global.IT.v1.3.3.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.global.DE.v1.3.3.zip)
 
 **Joomla Plugin - Hydrogen:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.hydrogen.EN.v1.3.2.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.hydrogen.IT.v1.3.2.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.hydrogen.DE.v1.3.2.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.hydrogen.EN.v1.3.3.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.hydrogen.IT.v1.3.3.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.hydrogen.DE.v1.3.3.zip)
 
 **Joomla Plugin - Helium:**
-[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.helium.EN.v1.3.2.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.helium.IT.v1.3.2.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.2/gpb.j3.helium.DE.v1.3.2.zip)
+[English](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.helium.EN.v1.3.3.zip) / [Italian](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.helium.IT.v1.3.3.zip) / [German](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry/releases/download/v1.3.3/gpb.j3.helium.DE.v1.3.3.zip)
 ___
 
 ## Automatic Installation (Joomla only)
