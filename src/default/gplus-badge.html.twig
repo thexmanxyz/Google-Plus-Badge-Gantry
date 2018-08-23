@@ -36,11 +36,6 @@
 {% set bCover = particle.badge.cover|default(true) %}
 {% set bTheme = particle.badge.theme|default('light') %}
 {% set bWidth = particle.badge.width|default(300) %}
-{% set bJsPlace = particle.js.placement|default('head') %}
-{% set bJsPrior = particle.js.priority|default(0) %}
-{% set bScriptType = 'text/javascript' %}
-{% set bJsExecAttr = '' %}
-{% set bJsExec = particle.js.execution|default("both") %}
 
 {% if bType == 'community' %}
     {% set bId = 'communities/' ~ bId %}
@@ -52,22 +47,12 @@
 {% endif %}
 
 {% set bHref = 'https://plus.google.com/' ~ bId|raw %}
+{% set bScriptType = 'text/javascript' %}
 
-{% if bJsExec == 'defer' or bJsExec == 'both' %}
-    {% set bJsExecAttr = 'defer="defer"' %}
-{% endif %}
-
-{% if bJsExec == 'both' %}
-    {% set bJsExecAttr = bJsExecAttr ~ ' ' %}
-{% endif %}
-
-{% if bJsExec == 'async' or bJsExec == 'both' %}
-    {% set bJsExecAttr = bJsExecAttr ~ 'async="async"' %}
-{% endif %}
-
-{% if bJsExecAttr is not empty %}
-    {% set bJsExecAttr = ' ' ~ bJsExecAttr %}
-{% endif %}
+{% set bJsPlace = particle.js.placement|default('head') %}
+{% set bJsExec = particle.js.execution|default("both") %}
+{% set bJsExecAttr = _self.getJSExecution(bJsExec) %}
+{% set bJsPrior = particle.js.priority|default(0) %}
 
 {% set cdnRepo = 'https://apis.google.com/js' %}
 {% set bJsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'platform', 'js') %}
@@ -106,4 +91,21 @@
         {%- set path = cdnUrl ~ '/' ~ cdnFile ~ "." ~ type -%}
     {%- endif -%}
     {{- path|raw -}}
+{%- endmacro -%}
+
+{%- macro getJSExecution(type) -%}
+    {%- set attribute = '' -%}
+    {%- if type == 'defer' or type == 'both' -%}
+        {%- set attribute = 'defer="defer"' -%}
+    {%- endif -%}
+    {%- if type == 'both' -%}
+        {%- set attribute = attribute ~ ' ' -%}
+    {%- endif -%}
+    {%- if type == 'async' or type == 'both' -%}
+        {%- set attribute = attribute ~ 'async="async"' -%}
+    {%- endif -%}
+    {%- if type is not empty -%}
+        {%- set attribute = ' ' ~ attribute -%}
+    {%- endif -%}
+    {{- attribute|raw -}}
 {%- endmacro -%}
