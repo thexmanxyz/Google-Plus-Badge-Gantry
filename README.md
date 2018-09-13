@@ -119,7 +119,7 @@ None
 ## Credits
 Thanks to the [Gantry](https://github.com/gantry) team for providing a modern templating framework.
 
-Thanks to Google for the Google+ Platform API.
+Thanks to Google for the [Google+ Badge API](https://developers.google.com/+/web/badge/).
 
 Thanks to [mariantanase](https://github.com/mariantanase) for the inspiration as well as the Italian back- and frontend translation.
 
