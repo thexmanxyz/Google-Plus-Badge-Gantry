@@ -1,5 +1,5 @@
-# Google Plus Badge - Particle for Gantry
-This project contains a Gantry Particle and adds the [Google+ Badge API](https://developers.google.com/+/web/badge/) functionality to the Gantry templating framework. **Google Plus Badge** encapsulates the parameterization of the Google+ service within a Gantry Particle. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMSs are supported:
+# Google+ Badge - Particle for Gantry
+This project contains a Gantry Particle and adds the [Google+ Badge API](https://developers.google.com/+/web/badge/) functionality to the Gantry templating framework. **Google+ Badge** encapsulates the parameterization of the Google+ service within a Gantry Particle. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMSs are supported:
 * Joomla
 * Wordpress
 * Grav
@@ -7,7 +7,7 @@ This project contains a Gantry Particle and adds the [Google+ Badge API](https:/
 ## Prerequisites
 * CMS (Joomla, Wordpress, Grav)
 * Gantry Templating Framework and Theme
-* Google Plus Platform API
+* Google+ Platform API
 
 ## Download
 Choose the correct download for your target platform. The Joomla Plugin System is supported for all Gantry themes globally or locally for the templates Helium and Hydrogen. The latest Particle version is **v1.3.3**.
@@ -31,13 +31,13 @@ ___
 ___
 
 ## Automatic Installation (Joomla only)
-1. Download the Plugin of the *Google Plus Badge Particle* for **Hydrogen, Helium or Global** installation.
+1. Download the Plugin of the *Google+ Badge Particle* for **Hydrogen, Helium or Global** installation.
 2. Install it over the Joomla Plugin System.
 
 *If you install the plugin globally be aware that the resource location changes to `/media/gantry5/engines/nucleus`*
 
 ## Manual Installation
-1. Download the **Default or Legacy Package** of the *Google Plus Badge Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
+1. Download the **Default or Legacy Package** of the *Google+ Badge Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
 3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the [listing](https://github.com/thexmanxyz/Google-Plus-Badge-Gantry#cms-template-folder) below to determine where the template folder for your CMS is located.
 4. [Optional] Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create the folder if it does not exist.
@@ -82,7 +82,7 @@ Please be aware that the template folder path varies in dependence of the used C
   * Deferred
 
 ## Showroom
-Insight of the *Google Plus Badge - Gantry Particle* configuration:
+Insight of the *Google+ Badge - Gantry Particle* configuration:
 
 **Backend (1)** - *[Appearance](/screenshots/backend_appearance.png)*
 
@@ -124,5 +124,5 @@ Thanks to Google for the [Google+ Badge API](https://developers.google.com/+/web
 
 Thanks to [mariantanase](https://github.com/mariantanase) from [tanase.it](https://www.tanase.it) for the inspiration as well as the Italian back- and frontend translation.
 
-## by [thex](https://github.com/thexmanxyz), [mariantanase](https://github.com/mariantanase)
+## by [thex](https://github.com/thexmanxyz), [mariantanase](https://github.com/mariantanase) | [gantryprojects](https://gantryprojects.com)
 Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE.md).
