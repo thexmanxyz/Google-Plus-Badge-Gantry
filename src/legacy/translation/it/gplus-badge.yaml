@@ -200,6 +200,13 @@ form:
             onload: Onload
             explicit: Explicit
 
+        cdn.base_url:
+          type: input.text
+          label: CDN URL di base
+          description: L'URL di base per il server CDN Google.
+          placeholder: https://apis.google.com/js
+          default: https://apis.google.com/js
+
         js.placement:
           type: select.select
           label: Posizione JS

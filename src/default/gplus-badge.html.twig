@@ -56,7 +56,7 @@
 {% set bJsExecAttr = _self.getJSExecution(bJsExec) %}
 {% set bJsPrior = particle.js.priority|default(0) %}
 
-{% set cdnRepo = 'https://apis.google.com/js' %}
+{% set cdnRepo = particle.cdn.base_url|default('https://apis.google.com/js') %}
 {% set bJsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'platform', 'js') %}
 
 {%- block particle -%}
