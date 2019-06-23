@@ -63,23 +63,23 @@ Please be aware that the template folder path varies in dependence of the used C
 4. [Optional] The download package contains the original version of the Google+ Badge API JS file. You can embed it over the backend configuration if you do not want to use the default CDN. If you chose automatic installation the file is already there.
 
 ## Supported Parameters and Particle Options
-* Custom CSS Classes
-* Site Types
+* Custom CSS classes
+* Site types
   * Profile, Page and Community
 * Theme
-  * Light and Dark
+  * Light and dark
 * Orientation
-  * Landscape and Portrait
-* Badge Language (~60)
-* Sizing of Badge
-* Photo for Badge
-* Badge Description
-* Community Owner
-* Loading Mechanism
-* JS Priority and Placement (head or footer)
-* JS Loading
+  * Landscape and portrait
+* Badge language (~60)
+* Sizing of badge
+* Photo for badge
+* Badge description
+* Community owner
+* Loading mechanism
+* JS priority and placement (head or footer)
+* JS loading
   * Remote, Local and Default
-* JS Execution
+* JS execution
   * Asynchronous
   * Deferred
 
