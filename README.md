@@ -127,4 +127,4 @@ Thanks to Google for the [Google+ Badge API](https://developers.google.com/+/web
 Thanks to [mariantanase](https://github.com/mariantanase) from [tanase.it](https://www.tanase.it) for the inspiration as well as the Italian back- and frontend translation.
 
 ## by [thex](https://github.com/thexmanxyz), [mariantanase](https://github.com/mariantanase) | [gantryprojects](https://gantryprojects.com)
-Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE.md).
+Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE).
